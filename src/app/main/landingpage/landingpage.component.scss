@@ -4,7 +4,7 @@ display: flex;
 align-items: center;
 justify-content: center;
 background: rgb(255, 252, 243);
-margin-top: -100px;
+margin-top: -88px;
 }
 div{
     display: flex;
@@ -20,10 +20,42 @@ div{
 .sektionName{
     justify-content: center;
     flex-direction: row;
+    padding-bottom: 142px;   // wegen mitte der h1 mal gucken 
 }
 .name{
     font-size: 48px!important;
     font-family:'Overpass'!important;
     color: rgba(0, 188, 143, 1);
     font-weight: 700;
+}
+.sektionBottom{
+    bottom: 8%;
+    position: absolute;
+    width: 100%;
+    flex-direction: unset;
+    justify-content: space-between;
+    align-items: normal;
+    >a{
+        margin-left: 4rem;
+        text-decoration: none;
+        font-family: 'Overpass';
+        font-size: 23px;
+        font-weight: 400;
+        color: rgba(0, 0, 0, 1);
+        rotate: -90deg;
+        &:hover {
+            font-size: 24px;
+        }
+        
+    }
+    
+}
+.scrollContainer{
+    margin-right: 4rem;
+
+    .test{
+        font-size:23px;
+        font-family: 'Overpass';
+        font-weight: 300;
+    }
 }

@@ -1,12 +1,14 @@
 .container{
     background: rgba(255, 252, 243, 1);
+    position: sticky;
+    top: 0;
     >div{
         height: 92px;
         display:flex;
         justify-content: space-between;
         align-items: center;
-        padding-left: 22px;
-        padding-right: 22px;
+        padding-left: 100px;
+        padding-right: 100px;
         >span{
             font-size: 40px;
             font-family: 'Syne';
