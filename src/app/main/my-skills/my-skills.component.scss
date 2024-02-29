@@ -1,0 +1,37 @@
+
+.headerContainer{
+    display: flex;
+    justify-content: center;
+    margin-bottom: -104px;
+  
+    >div{display: flex;
+        background: rgb(255, 252, 243);
+        width: 560px;
+        justify-content: center;
+        align-items: center;}
+}
+
+
+.header{
+    font-family: "Syne";
+    font-weight: 800;
+    font-size: 78px;
+    background: rgb(255, 252, 243);
+
+}
+.skillContainer{
+    border: solid 4px rgb(0, 0, 0);
+    min-height: 592px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 78px;
+    margin: 62px;
+    >div{
+        display: flex;
+        gap: 8vw;
+        flex-wrap: wrap;
+    }
+}

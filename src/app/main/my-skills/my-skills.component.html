@@ -1,1 +1,28 @@
-<p>my-skills works!</p>
+<div class="header">
+  <div class="headerContainer"><div>My skills</div></div>
+  <div class="skillContainer">
+    <div>
+      @for(img of iconPath; track img){
+      <img src="/assets/img/{{ img }}" alt="" />
+      }
+    </div>
+
+    <div>
+      @for(img of iconPath2; track img){
+      <img src="/assets/img/{{ img }}" alt="" />
+      }
+    </div>
+  </div>
+</div>
+
+<!-- 
+<img src="/assets/img/skill_ts.png" alt="" />
+<img src="/assets/img/skill_js.png" alt="" />
+<img src="/assets/img/skill_html.png" alt="" />
+<img src="/assets/img/skill_css.png" alt="" /> -->
+
+<!-- <img src="/assets/img/skill_firebase.png" alt="" />
+<img src="/assets/img/skill_git.png" alt="" />
+<img src="/assets/img/skill_scrum.png" alt="" />
+<img src="/assets/img/skill_rest_api.png" alt="" />
+<img src="/assets/img/skill_material.png" alt="" /> -->
