@@ -1,1 +1,25 @@
-<p>portfolio works!</p>
+<div class="mainBoxContent">
+  <div class="mainBoxHeader">
+    <span class="header">Portfolio</span>
+    <span class="headerdescription"
+      >Explore selection of my work here - Interact with projects to see my
+      skills in action</span
+    >
+  </div>
+  <!-- <div (mouseenter)="onHover()" (mouseleave)="onMouseOut()"class="mainBox"> -->
+  <div class="mainBox">
+    @for(img of imgs; let i = $index; track i;){
+    <div class="project" [ngClass]="{'switchBoxes': i % 2 !== 0}" >
+      <img class="imgs" src="assets/img/{{ img }}" alt="" />
+      <div class="leftBox">
+        <h2>{{title[i]}}</h2>
+        <span>{{ description[i] }}</span>
+        <div>
+          <a href="">test</a>
+          <a href="">test</a>
+        </div>
+      </div>
+    </div>
+    }
+  </div>
+</div>
