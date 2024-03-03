@@ -5,15 +5,18 @@ align-items: center;
 justify-content: center;
 background: rgb(255, 252, 243);
 margin-top: -88px;
+transition: all 0.5s ease-in-out;
 }
 div{
     display: flex;
     align-items: center;
     flex-direction: column;
+    transition: all 0.5s ease-in-out;
     >span{ 
         font-size: 128px;
         font-family:'Syne';
         font-weight: 800;
+        transition: all 0.5s ease-in-out;
     }
 }
 

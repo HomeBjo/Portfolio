@@ -1,3 +1,34 @@
+@mixin hoverContainerStyles() {
+  transition: all 0.5s ease-in-out;
+  border: 3px solid;
+  height: 300px;
+  width: 450px;
+  position: absolute;
+  opacity: 1;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+@mixin hoverContainerImgStyles() {
+
+    transition: all 0.5s ease-in-out;
+    display: flex;
+    position: relative;
+    top: -196px;
+    right: 0px;
+    left: 451px;
+    transform: rotate(1deg);
+    opacity: 1;
+}
+
+@mixin counterStyles() {
+  position: absolute;
+  right: 78px;
+  font-family: 'Syne';
+  font-size: 48px;
+  font-weight: 700;
+}
+
+
 .mainBoxContent {
   display: flex;
   align-items: center;
@@ -30,6 +61,7 @@
     height: 300px;
     object-fit: cover;
     border-radius: 10px;
+    margin: 18px;
   }
 }
 .project {
@@ -38,6 +70,7 @@
   align-items: center;
   width: 63vw;
   gap: 72px;
+  align-items: flex-start;
   &:hover {
     .leftBox {
       opacity: 1;
@@ -45,8 +78,28 @@
       transform: scale(1.1);
       animation: slide 0.5s ease-in-out;
     }
+    .hoverContainer {
+      @include hoverContainerStyles();
+    }
+    .hoverContainerImg {
+      position: absolute;
+      > img {
+        @include hoverContainerImgStyles();
+      }
+    }
   }
 }
+.profileCount{
+  @include counterStyles();
+}
+.switchCount{
+  position: absolute;
+  left: 78px;
+  font-family: 'Syne';
+  font-size: 48px;
+  font-weight: 700;
+}
+
 .leftBox {
   display: flex;
   flex-direction: column;
@@ -54,19 +107,85 @@
   position: relative;
   left: -28px;
   flex-basis: 50%;
+  margin-top: 64px;
 
   > div {
     display: flex;
     justify-content: center;
     gap: 22px;
     margin-top: 72px;
+    >span{
+      text-align: start;
+    }
     > a {
       text-decoration: none;
     }
   }
 }
+.hoverContainer {
+  border: 3px solid;
+  margin-top: 15px;
+  margin-left: 15px;
+  position: absolute;
+  opacity: 0;
+}
+.hoverContainerImg {
+  > img {
+    display: flex;
+    position: absolute;
+    top: -196px;
+    right: 0px;
+    left: 451px;
+    transform: rotate(135deg);
+    opacity: 0.2;
+  }
+}
 .switchBoxes {
   flex-direction: row-reverse;
+  
+  &:hover{
+    .hoverContainerSwitch {
+      transition: all 0.5s ease-in-out;
+      border: 3px solid;
+      height: 300px;
+      width: 450px;
+      position: absolute;
+      opacity: 1;
+      margin-top: 30px;
+      margin-left: 0px
+    }
+    .hoverContainerImgSwitch {
+      position: absolute;
+      > img {
+        transition: all 0.5s ease-in-out;
+        display: flex;
+        position: relative;
+        top: -196px;
+        right: 0px;
+        left: -40px;
+        transform: rotate(270deg);
+        opacity: 1;
+      }
+    }
+  }
+}
+.hoverContainerSwitch {
+  border: 3px solid;
+  margin-top: 15px;
+  margin-left: 15px;
+  position: absolute;
+  opacity: 0;
+}
+.hoverContainerImgSwitch {
+  > img {
+    display: flex;
+    position: absolute;
+    top: -196px;
+    right: 0px;
+    left: -40px;
+    transform: rotate(182deg);
+    opacity: 0.2;
+  }
 }
 
 @keyframes slide {
