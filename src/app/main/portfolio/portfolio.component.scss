@@ -28,6 +28,29 @@
   font-weight: 700;
 }
 
+@mixin boxStyles ($leftValue){
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  position: relative;
+  left: $leftValue;
+  flex-basis: 50%;
+  margin-top: 64px;
+
+  > div {
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+    margin-top: 72px;
+    >span{
+      text-align: start;
+    }
+    > a {
+      text-decoration: none;
+    }
+  }
+}
+
 
 .mainBoxContent {
   display: flex;
@@ -92,6 +115,7 @@
 .profileCount{
   @include counterStyles();
 }
+
 .switchCount{
   position: absolute;
   left: 78px;
@@ -101,26 +125,10 @@
 }
 
 .leftBox {
-  display: flex;
-  flex-direction: column;
-  opacity: 0;
-  position: relative;
-  left: -28px;
-  flex-basis: 50%;
-  margin-top: 64px;
-
-  > div {
-    display: flex;
-    justify-content: center;
-    gap: 22px;
-    margin-top: 72px;
-    >span{
-      text-align: start;
-    }
-    > a {
-      text-decoration: none;
-    }
-  }
+  @include boxStyles ($leftValue:-28px);
+}
+.switchLeftBox{
+  @include boxStyles ($leftValue:50px);
 }
 .hoverContainer {
   border: 3px solid;
@@ -135,15 +143,23 @@
     position: absolute;
     top: -196px;
     right: 0px;
-    left: 451px;
+    left: 28px;
     transform: rotate(135deg);
     opacity: 0.2;
   }
 }
 .switchBoxes {
   flex-direction: row-reverse;
+ 
+  
   
   &:hover{
+    .switchLeftBox {
+      opacity: 1;
+      transition: all 0.5s ease-in-out;
+      transform: scale(1.1);
+      animation: slide2 0.5s ease-in-out;
+    }
     .hoverContainerSwitch {
       transition: all 0.5s ease-in-out;
       border: 3px solid;
@@ -169,6 +185,7 @@
     }
   }
 }
+
 .hoverContainerSwitch {
   border: 3px solid;
   margin-top: 15px;
@@ -182,7 +199,7 @@
     position: absolute;
     top: -196px;
     right: 0px;
-    left: -40px;
+    left: 400px;
     transform: rotate(182deg);
     opacity: 0.2;
   }
@@ -194,5 +211,13 @@
   }
   from {
     transform: translateX(-100%);
+  }
+}
+@keyframes slide2 {
+  to {
+    transform: translateX(0%);
+  }
+  from {
+    transform: translateX(100%);
   }
 }
