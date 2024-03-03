@@ -1,34 +1,32 @@
 @mixin hoverContainerStyles() {
   transition: all 0.5s ease-in-out;
   border: 3px solid;
-  height: 300px;
-  width: 450px;
+  height: 393px;
+  width: 590px;
   position: absolute;
   opacity: 1;
   margin-top: 30px;
   margin-left: 30px;
 }
 @mixin hoverContainerImgStyles() {
-
-    transition: all 0.5s ease-in-out;
-    display: flex;
-    position: relative;
-    top: -196px;
-    right: 0px;
-    left: 451px;
-    transform: rotate(1deg);
-    opacity: 1;
+  transition: all 0.5s ease-in-out;
+  display: flex;
+  position: relative;
+  top: -196px;
+  left: 588px;
+  transform: rotate(1deg);
+  opacity: 1;
 }
 
 @mixin counterStyles() {
   position: absolute;
   right: 78px;
-  font-family: 'Syne';
+  font-family: "Syne";
   font-size: 48px;
   font-weight: 700;
 }
 
-@mixin boxStyles ($leftValue){
+@mixin boxStyles($leftValue) {
   display: flex;
   flex-direction: column;
   opacity: 0;
@@ -36,13 +34,13 @@
   left: $leftValue;
   flex-basis: 50%;
   margin-top: 64px;
+  gap: 16px;
 
   > div {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 22px;
-    margin-top: 72px;
-    >span{
+    > span {
       text-align: start;
     }
     > a {
@@ -50,7 +48,6 @@
     }
   }
 }
-
 
 .mainBoxContent {
   display: flex;
@@ -78,10 +75,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 32px;
+  gap: 64px;
   .imgs {
     width: auto;
-    height: 300px;
+    height: 393px;
     object-fit: cover;
     border-radius: 10px;
     margin: 18px;
@@ -99,7 +96,7 @@
       opacity: 1;
       transition: all 0.5s ease-in-out;
       transform: scale(1.1);
-      animation: slide 0.5s ease-in-out;
+      animation: slideLeft 0.5s ease-in-out;
     }
     .hoverContainer {
       @include hoverContainerStyles();
@@ -112,23 +109,23 @@
     }
   }
 }
-.profileCount{
+.profileCount {
   @include counterStyles();
 }
 
-.switchCount{
+.switchCount {
   position: absolute;
   left: 78px;
-  font-family: 'Syne';
+  font-family: "Syne";
   font-size: 48px;
   font-weight: 700;
 }
 
 .leftBox {
-  @include boxStyles ($leftValue:-28px);
+  @include boxStyles($leftValue: 100px);
 }
-.switchLeftBox{
-  @include boxStyles ($leftValue:50px);
+.switchLeftBox {
+  @include boxStyles($leftValue: -100px);
 }
 .hoverContainer {
   border: 3px solid;
@@ -148,27 +145,56 @@
     opacity: 0.2;
   }
 }
+.portfolioTitle {
+  font-size: 48px;
+  font-family: "Syne";
+  font-weight: 800;
+}
+.infoBox {
+  font-family: "Overpass";
+  font-size: 24px;
+  color: rgb(0, 188, 143);
+}
+.infoText {
+  font-size: 16px;
+  font-family: "Overpass";
+}
+.buttonBox{
+  >a{
+    text-decoration: none;
+    color: black;
+    border: 2px solid;
+    padding: 12px 36px;
+    font-family: 'Overpass';
+    font-size: 23px;
+    font-weight: 400;
+    transition: all 0.2s ease-in-out;
+    &:hover{
+      font-weight: 600;
+      padding: 12px 48px;
+      transition: all 0.2s ease-in-out;
+    }
+  }
+}
 .switchBoxes {
   flex-direction: row-reverse;
- 
-  
-  
-  &:hover{
+
+  &:hover {
     .switchLeftBox {
       opacity: 1;
       transition: all 0.5s ease-in-out;
       transform: scale(1.1);
-      animation: slide2 0.5s ease-in-out;
+      animation: slideRight 0.5s ease-in-out;
     }
     .hoverContainerSwitch {
       transition: all 0.5s ease-in-out;
       border: 3px solid;
-      height: 300px;
-      width: 450px;
+      height: 393px;
+      width: 590px;
       position: absolute;
       opacity: 1;
       margin-top: 30px;
-      margin-left: 0px
+      margin-left: 0px;
     }
     .hoverContainerImgSwitch {
       position: absolute;
@@ -205,7 +231,7 @@
   }
 }
 
-@keyframes slide {
+@keyframes slideLeft {
   to {
     transform: translateX(0%);
   }
@@ -213,7 +239,7 @@
     transform: translateX(-100%);
   }
 }
-@keyframes slide2 {
+@keyframes slideRight {
   to {
     transform: translateX(0%);
   }
