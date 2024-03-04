@@ -1,12 +1,27 @@
 import { Component } from '@angular/core';
+import { FormsModule, NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [],
+  imports: [FormsModule],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })
 export class ContactComponent {
+
+  contactData = {
+    name:"",
+    email:"",
+    message:"",
+  }
+
+  onSubmit(ngFrom : NgForm){
+    if (ngFrom.valid && ngFrom.submitted) {
+      console.log(this.contactData,'geht')
+      
+    }
+   
+  }
 
 }
