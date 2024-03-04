@@ -1,4 +1,45 @@
+.footer {
+  background-color: rgb(0, 0, 0);
+  height: 69px;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+}
 
-.ss{
-background-color: rgba(0, 0, 0, 1) ; 
+.rightSide {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  > img {
+    height: 40px;
+  }
+  > div {
+    gap: 42px;
+    display: flex;
+
+    justify-content: end;
+    > span {
+      font-size: 16px;
+      font-family: "Overpass";
+      color: rgba(255, 252, 243, 1);
+      font-weight: 400;
+      margin: 4px;
+    }
+  }
+}
+.leftSide {
+  flex-direction: column;
+  display: flex;
+
+  > span {
+    font-size: 23px;
+    font-family: "Overpass";
+    color: rgba(255, 252, 243, 1);
+    font-weight: 400;
+  }
+  > .logo {
+    font-size: 40px;
+    font-family: "Overpass";
+    color: rgba(255, 252, 243, 1);
+  }
 }

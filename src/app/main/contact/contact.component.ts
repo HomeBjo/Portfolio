@@ -38,6 +38,7 @@ export class ContactComponent {
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
+            //noch was rein machen damit man weis das was passiert ist
 
             ngForm.resetForm();
           },
