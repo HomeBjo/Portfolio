@@ -26,6 +26,15 @@
       }
 
 }
+@mixin validationImgContainers ($left,$top) {
+
+  >img{
+    position: relative;
+    left: $left;
+    top: $top;
+  }
+
+}
 .contactContainer {
   background-image: url("/assets/img/contact_back_img.png");
   height: 1082px;
@@ -97,36 +106,69 @@
     background-color: black;
     color: rgba(187, 187, 187, 1);
     border: 4px solid rgba(187, 187, 187, 1);
-    cursor: pointer;
     box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.15);
     transition: all 0.2s ease-in-out;
-    &:hover{
-      font-weight: 600;
-      padding: 20px 40px;
-      transition: all 0.2s ease-in-out;
-    }
-
+    opacity: 0.5;
   }
 }
 input::placeholder {
     color: rgba(255, 252, 243, 1);
+    font-family: 'Overpass';
   }
   textarea::placeholder {
     color: rgba(255, 252, 243, 1);
+    font-family: 'Overpass';
+  }
+  input:focus:valid {
+    border: 2px solid rgba(255, 252, 243, 1);
+    border-bottom: 0px solid rgba(255, 252, 243, 1);
+    box-shadow: 0px 2px 0px 0px rgba(255, 252, 243, 1);
   }
 .checkBox{
     height: 52px;
     display: flex;
     align-items: center;
+    gap: 6px;
     >span{
+      
         font-family: 'Overpass';
         font-size: 14px;
         font-weight: 400;
         color: rgba(255, 252, 243, 1);
-
     }
 }
 .switch{
     color: rgba(0, 188, 143, 1);
 
 }
+.aktivButton{
+  cursor: pointer;
+  opacity: 1!important;
+  transition: all 0.2s ease-in-out;
+  margin-top: 2px;
+  &:hover{
+    font-weight: 600;
+    padding: 20px 40px!important;
+    transition: all 0.2s ease-in-out;
+  }
+}
+.validationText{
+  display: flex;
+  /* justify-content: right; */
+  /* align-items: center; */
+  /* left: -2px; */
+  right: 263px;
+  position: relative;
+  font-family: 'Overpass';
+ 
+  font-size: 12px;
+  >span{
+    color: rgba(230, 28, 64, 1)!important;
+  }
+}
+.validationImgContainer{
+ @include validationImgContainers($left:518px,$top:-39px)
+}
+
+ 
+ 
