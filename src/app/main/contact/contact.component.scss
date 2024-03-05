@@ -7,7 +7,7 @@
     border-bottom: 0px solid rgba(255, 252, 243, 1);
     // box-shadow: inset;
     box-shadow: 0px 2px 0px 0px rgba(255, 252, 243, 1);
-    width: 617px;
+    width: 42vw;
     color: white;
   
     &:hover {
@@ -26,15 +26,7 @@
       }
 
 }
-@mixin validationImgContainers ($left,$top) {
 
-  >img{
-    position: relative;
-    left: $left;
-    top: $top;
-  }
-
-}
 .contactContainer {
   background-image: url("/assets/img/contact_back_img.png");
   height: 1082px;
@@ -153,21 +145,21 @@ input::placeholder {
   }
 }
 .validationText{
-  display: flex;
-  /* justify-content: right; */
-  /* align-items: center; */
-  /* left: -2px; */
-  right: 263px;
-  position: relative;
-  font-family: 'Overpass';
- 
-  font-size: 12px;
+    display: flex;
+    right: 263px;
+    font-family: "Overpass";
+    font-size: 12px;
+    width: 48vw;
+    justify-content: space-between;
   >span{
     color: rgba(230, 28, 64, 1)!important;
+    margin-left: 21px;
   }
-}
-.validationImgContainer{
- @include validationImgContainers($left:518px,$top:-39px)
+  >img{
+    position: relative;
+    top: -39px;
+    left: -30px;
+  }
 }
 
  
