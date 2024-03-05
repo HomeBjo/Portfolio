@@ -1,40 +1,37 @@
 @mixin inputStyles {
-    // box-sizing: border-box;
-    border: 2px solid rgba(255, 243, 243, 0);
-    background: none;
-    // outline: none;
-    padding: 15px 25px 15px 25px;
-    border-bottom: 0px solid rgba(255, 252, 243, 1);
-    // box-shadow: inset;
-    box-shadow: 0px 2px 0px 0px rgba(255, 252, 243, 1);
-    width: 42vw;
-    color: white;
-  
-    &:hover {
-      border: 2px solid rgba(255, 252, 243, 1);
-      border-bottom: 0px solid rgba(255, 252, 243, 1);
-      cursor: pointer;
-      transition: border 0.3s ease; 
-    }
-    &:focus {
-        border: 2px solid rgba(255, 252, 243, 1);
-        border-bottom: 0px solid rgba(255, 252, 243, 1);
-        box-shadow: 0px 2px 0px 0px rgba(255, 252, 243, 1);
-        outline: none; 
-        cursor: auto;
-       
-      }
+  // box-sizing: border-box;
+  border: 2px solid rgba(255, 243, 243, 0);
+  background: none;
+  // outline: none;
+  padding: 15px 25px 15px 25px;
+  border-bottom: 0px solid rgba(255, 252, 243, 1);
+  // box-shadow: inset;
+  box-shadow: 0px 2px 0px 0px rgba(255, 252, 243, 1);
+  width: 42vw;
+  max-width: 600px;
+  color: white;
 
+  &:hover {
+    border: 2px solid rgba(255, 252, 243, 1);
+    border-bottom: 0px solid rgba(255, 252, 243, 1);
+    cursor: pointer;
+    transition: border 0.3s ease;
+  }
+  &:focus {
+    border: 2px solid rgba(255, 252, 243, 1);
+    border-bottom: 0px solid rgba(255, 252, 243, 1);
+    box-shadow: 0px 2px 0px 0px rgba(255, 252, 243, 1);
+    outline: none;
+    cursor: auto;
+  }
 }
 @mixin activInputs {
-  border: 2px solid rgba(255, 252, 243, 1)!important;
-  box-shadow: 0px 1px 0px 0px rgba(255, 252, 243)!important;
-
+  border: 2px solid rgba(255, 252, 243, 1) !important;
+  box-shadow: 0px 1px 0px 0px rgba(255, 252, 243) !important;
 }
 
 .contactContainer {
   background-image: url("/assets/img/contact_back_img.png");
-  height: 1082px;
   background-color: rgb(255, 252, 243);
   display: flex;
   align-items: center;
@@ -45,13 +42,17 @@
 .contactHeader {
   display: flex;
   width: 90vw;
+  
   margin-top: 131px;
   > span {
     font-size: 78px;
     font-family: "Syne";
     font-weight: 800;
     color: rgb(255, 252, 243);
-  }
+    &:hover{
+      color: rgba(0, 188, 143, 1);
+    }
+  } 
 }
 .contactInfo {
   display: flex;
@@ -79,23 +80,21 @@
   gap: 8px;
   align-items: center;
   margin-top: 16px;
-  >input {
-    @include inputStyles()
-  
-    //   &::placeholder {
-    //     transform: translateY(-20px);
-    //     transition: transform 0.3s ease;
-    //     margin: 20px;
-    //   } hier kann man dan den placholer verschieben mega gut
-      
+  > input {
+    @include inputStyles() //   &::placeholder {
+      //     transform: translateY(-20px);
+      //     transition: transform 0.3s ease;
+      //     margin: 20px;
+      //   } hier kann man dan den placholer verschieben mega gut
+;
   }
-  >textarea{
-    @include inputStyles()
+  > textarea {
+    @include inputStyles();
   }
-  >button{
+  > button {
     padding: 20px 30px 20px 30px;
     width: auto;
-    font-family: 'Overpass';
+    font-family: "Overpass";
     font-size: 23px;
     font-weight: 400;
     align-items: center;
@@ -108,85 +107,82 @@
   }
 }
 input::placeholder {
+  color: rgba(255, 252, 243, 1);
+  font-family: "Overpass";
+}
+textarea::placeholder {
+  color: rgba(255, 252, 243, 1);
+  font-family: "Overpass";
+}
+input:focus:valid {
+  border: 2px solid rgba(255, 252, 243, 1);
+  border-bottom: 0px solid rgba(255, 252, 243, 1);
+  box-shadow: 0px 2px 0px 0px rgba(255, 252, 243, 1);
+}
+.checkBox {
+  height: 52px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  > span {
+    font-family: "Overpass";
+    font-size: 14px;
+    font-weight: 400;
     color: rgba(255, 252, 243, 1);
-    font-family: 'Overpass';
-  }
-  textarea::placeholder {
-    color: rgba(255, 252, 243, 1);
-    font-family: 'Overpass';
-  }
-  input:focus:valid {
-    border: 2px solid rgba(255, 252, 243, 1);
-    border-bottom: 0px solid rgba(255, 252, 243, 1);
-    box-shadow: 0px 2px 0px 0px rgba(255, 252, 243, 1);
-  }
-  .checkBox {
-    height: 52px;
-    display: flex;
-    align-items: center;
-    gap: 6px;
-  
-    > span {
-      font-family: 'Overpass';
-      font-size: 14px;
-      font-weight: 400;
-      color: rgba(255, 252, 243, 1);
-  
-      > span.switch {
-        color: rgba(0, 188, 143, 1);
-        transition: 0.3s ease-in-out;
-  
-        &:hover {
-          filter: drop-shadow(0 0 0.75rem white);
-        }
-      }
-    }
-  
-    > img {
-      cursor: pointer;
+
+    > span.switch {
+      color: rgba(0, 188, 143, 1);
       transition: 0.3s ease-in-out;
-  
+
       &:hover {
         filter: drop-shadow(0 0 0.75rem white);
       }
-  
-      &:hover ~ span .switch {
-        filter: drop-shadow(0 0 0.75rem white);
-      }
     }
   }
-.aktivButton{
+
+  > img {
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+
+    &:hover {
+      filter: drop-shadow(0 0 0.75rem white);
+    }
+
+    &:hover ~ span .switch {
+      filter: drop-shadow(0 0 0.75rem white);
+    }
+  }
+}
+.aktivButton {
   cursor: pointer;
-  opacity: 1!important;
+  opacity: 1 !important;
   transition: all 0.2s ease-in-out;
   margin-top: 2px;
-  &:hover{
+  &:hover {
     font-weight: 600;
-    padding: 20px 40px!important;
+    padding: 20px 40px !important;
     transition: all 0.2s ease-in-out;
   }
 }
-.validationText{
-    display: flex;
-    right: 263px;
-    font-family: "Overpass";
-    font-size: 12px;
-    width: 48vw;
-    justify-content: space-between;
-  >span{
-    color: rgba(230, 28, 64, 1)!important;
+.validationText {
+  display: flex;
+  right: 263px;
+  font-family: "Overpass";
+  font-size: 12px;
+  width: 48vw;
+  max-width: 600px;
+  justify-content: space-between;
+  > span {
+    color: rgba(230, 28, 64, 1) !important;
     margin-left: 21px;
   }
-  >img{
+  > img {
     position: relative;
     top: -45px;
     left: -30px;
   }
 }
-.aktivInput{
-  @include  activInputs();
+.aktivInput {
+  @include activInputs();
 }
-
-
- 
- 

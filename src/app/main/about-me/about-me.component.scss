@@ -5,7 +5,7 @@
 }
 
 img{
-    height: 553px;
+    height: 391px;
     margin-top: 93px;
 }
 .containerAboutMe{
@@ -39,6 +39,9 @@ img{
         color: rgba(0, 0, 0, 1);
         font-weight: 800;
         font-family: 'Syne';
+        &:hover{
+            color: rgba(0, 188, 143, 1);
+          }
 
     }
 }

@@ -60,6 +60,9 @@
   font-family: "Syne";
   font-weight: 800;
   font-size: 78px;
+  &:hover{
+    color: rgba(0, 188, 143, 1);
+  }
 }
 .headerdescription {
   font-family: "Overpass";
