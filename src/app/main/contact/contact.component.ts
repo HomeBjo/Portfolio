@@ -1,16 +1,19 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [FormsModule],
+  imports: [FormsModule,CommonModule],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })
 export class ContactComponent {
 
+  isChecked : boolean = false;
+  isImageVisible: boolean = true;
 
   http = inject(HttpClient);
 
@@ -51,4 +54,8 @@ export class ContactComponent {
 
       ngForm.resetForm();
     }
-  }}
+  }
+  toggleCheckbox() {
+    this.isChecked = !this.isChecked;
+  }
+}
