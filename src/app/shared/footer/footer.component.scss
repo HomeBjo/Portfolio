@@ -3,7 +3,7 @@
   height: 69px;
   display: flex;
   justify-content: space-between;
-  padding: 40px;
+  padding: 36px;
 }
 
 .rightSide {
@@ -30,16 +30,20 @@
 .leftSide {
   flex-direction: column;
   display: flex;
-
-  > span {
-    font-size: 23px;
-    font-family: "Overpass";
-    color: rgba(255, 252, 243, 1);
-    font-weight: 400;
+  >div{
+    > span {
+      font-size: 23px;
+      font-family: "Overpass";
+      color: rgba(255, 252, 243, 1);
+      font-weight: 400;
+    }
+    > .logo {
+     height: 67px;
+    }
   }
-  > .logo {
-    font-size: 40px;
-    font-family: "Overpass";
-    color: rgba(255, 252, 243, 1);
+  >div{
+    display: flex;
+    align-items: flex-start;
   }
 }
+

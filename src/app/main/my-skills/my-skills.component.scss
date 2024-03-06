@@ -36,7 +36,13 @@
         display: flex;
         gap: 8vw;
         flex-wrap: wrap;
+        justify-content: center;
+        >img{
+            // filter: blur(5px);
+            filter: brightness(0);
+        }
     }
+    
 }
 .arrowRight{
     height: 184px;

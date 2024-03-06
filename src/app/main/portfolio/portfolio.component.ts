@@ -10,7 +10,7 @@ import { Component } from '@angular/core';
 })
 export class PortfolioComponent {
   // isHovered: boolean = false;
-  imgs = ['win1.jpg', 'win2.jpg'];
+  imgs = ['win1.jpg', 'el_loco.png'];
 
   description = [
     'Task Manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',

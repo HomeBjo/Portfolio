@@ -7,8 +7,8 @@
         display:flex;
         justify-content: space-between;
         align-items: center;
-        padding-left: 100px;
-        padding-right: 100px;
+        padding-left: 36px;
+        padding-right: 36px;
         >span{
             font-size: 40px;
             font-family: 'Syne';
@@ -19,4 +19,8 @@
             cursor: pointer;
         }
     }
+}
+.logo{
+    height: 67px!important;
+    width: auto!important;
 }
