@@ -32,22 +32,24 @@ div{
     font-weight: 700;
 }
 .sektionBottom{
-    bottom: 8%;
+    bottom: 48px;
     position: absolute;
     width: 100%;
     flex-direction: unset;
     justify-content: space-between;
     align-items: normal;
     >a{
-        margin-left: 4rem;
+        margin-left: -5rem;
         text-decoration: none;
-        font-family: 'Overpass';
-        font-size: 23px;
+        font-family: "Overpass";
+        font-size: 25px;
         font-weight: 400;
-        color: rgba(0, 0, 0, 1);
-        rotate: -90deg;
+        color: rgb(0, 0, 0);
+        rotate: 270deg;
+        height: 1px;
+        margin-top: -12px;
         &:hover {
-            font-size: 24px;
+            font-size: 25px;
         }
         
     }
@@ -55,10 +57,45 @@ div{
 }
 .scrollContainer{
     margin-right: 4rem;
+    >img{
+        z-index: 1;
+        transition: transform 2s ease-in-out;
+        transform: translateY(0);
+        animation: moveDown 2s ease-in-out;
+        animation-delay: 2s;
+        &:hover {
+            animation: moveDownAndHide 2s ease-in-out;
+          }
+    }
 
-    .test{
-        font-size:23px;
-        font-family: 'Overpass';
+    >span{
+        z-index: 2;
+        font-size: 23px;
+        font-family: "Overpass";
         font-weight: 300;
+        background-color: rgb(255, 252, 243);
+        padding-bottom: 60px;
+        margin-bottom: -46px;
     }
 }
+@keyframes moveDown {
+    from {
+      transform: translateY(-100px);
+      
+    }
+    to {
+      transform: translateY(110px); 
+    
+    }
+  }
+  @keyframes moveDownAndHide {
+    0% {
+      transform: translateY(-100px);
+ 
+    }
+    100% {
+      transform: translateY(100px); 
+    }
+  }
+  
+  
