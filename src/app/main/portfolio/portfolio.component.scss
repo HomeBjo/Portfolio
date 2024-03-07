@@ -46,6 +46,9 @@
     }
   }
 }
+.test{
+width: 60vw;
+}
 
 .mainBoxContent {
   display: flex;
@@ -91,8 +94,8 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  width: 97vw;
-  gap: 400px;
+  
+  gap: 10px;
   &:hover {
     .leftBox {
       opacity: 1;

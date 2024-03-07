@@ -23,6 +23,8 @@
   font-weight: 800;
   font-size: 78px;
   background: rgb(255, 252, 243);
+  width: 100vw;
+ 
   &:hover {
     color: rgba(0, 188, 143, 1);
   }
@@ -36,7 +38,7 @@
   flex-wrap: wrap;
   flex-direction: column;
   gap: 78px;
-  margin: 62px;
+  margin: 69px;
   text-align: center;
   > div {
     display: flex;
