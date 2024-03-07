@@ -17,7 +17,7 @@ export class PortfolioComponent {
     'Task Manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
     'Play a little jump and run by helping Pepe named Ell pollo loco on his adventure',
   ];
-  title = ['Join','El pollo locco'];
+  title = ['Join','El Pollo Loco'];
   usedTech = ['JavaScript | Html | CSS','JavaScript | Html | CSS'];
 
 

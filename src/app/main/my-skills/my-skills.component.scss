@@ -1,4 +1,4 @@
-.containerMySkill{
+.containerMySkill {
   display: flex;
   justify-content: center;
   background: rgb(255, 252, 243);
@@ -23,8 +23,7 @@
   font-weight: 800;
   font-size: 78px;
   background: rgb(255, 252, 243);
-  width: 100vw;
- 
+  width: 80vw;
   &:hover {
     color: rgba(0, 188, 143, 1);
   }
@@ -42,7 +41,7 @@
   text-align: center;
   > div {
     display: flex;
-    gap: 8vw;
+    gap: 10vw;
     flex-wrap: wrap;
     justify-content: center;
     > div {
@@ -64,4 +63,5 @@
 }
 .arrowRight {
   height: 184px;
+  padding-left: 95px;
 }
