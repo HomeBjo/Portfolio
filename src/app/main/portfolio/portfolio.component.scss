@@ -19,23 +19,21 @@
 }
 
 @mixin counterStyles() {
-  position: absolute;
-  right: 78px;
+  
+ 
   font-family: "Syne";
   font-size: 48px;
   font-weight: 700;
+  position: absolute;
+    right: 36px;
 }
 
 @mixin boxStyles($leftValue) {
   display: flex;
   flex-direction: column;
   opacity: 0;
-  position: relative;
   left: $leftValue;
-  flex-basis: 50%;
-  margin-top: 112px;
   gap: 16px;
-
   > div {
     display: flex;
     justify-content: flex-start;
@@ -54,6 +52,7 @@
   align-items: center;
   flex-direction: column;
   background: rgb(255, 252, 243);
+  justify-content: center;
 }
 .header {
   text-align: center;
@@ -72,28 +71,28 @@
 .mainBoxHeader {
   display: flex;
   flex-direction: column;
-  margin-bottom: 112px;
+  margin-top: 112px;
+    margin-bottom: 42px;
 }
 .mainBox {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 64px;
+  width: 99vw;
   .imgs {
-    width: auto;
+    width: 591px;
     height: 393px;
     object-fit: cover;
-    border-radius: 10px;
     margin: 18px;
   }
 }
 .project {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  width: 63vw;
-  gap: 72px;
-  align-items: flex-start;
+  width: 97vw;
+  gap: 400px;
   &:hover {
     .leftBox {
       opacity: 1;
@@ -118,18 +117,34 @@
 
 .switchCount {
   position: absolute;
-  left: 78px;
-  font-family: "Syne";
-  font-size: 48px;
-  font-weight: 700;
+    left: 36px;
 }
 
 .leftBox {
-  @include boxStyles($leftValue: 100px);
+  @include boxStyles($leftValue: 131px);
 }
-.switchLeftBox {
-  @include boxStyles($leftValue: -100px);
-}
+// .switchLeftBox {
+//   display: flex;
+//   flex-direction: column;
+//   opacity: 1;
+//   position: relative;
+
+
+
+//   gap: 16px;
+
+//   > div {
+//     display: flex;
+//     justify-content: flex-start;
+//     gap: 22px;
+//     > span {
+//       text-align: start;
+//     }
+//     > a {
+//       text-decoration: none;
+//     }
+//   }
+// }
 .hoverContainer {
   border: 3px solid;
   margin-top: 15px;
@@ -145,13 +160,14 @@
     right: 0px;
     left: 28px;
     transform: rotate(135deg);
-    opacity: 0.2;
+    opacity: 0;
   }
 }
 .portfolioTitle {
   font-size: 48px;
   font-family: "Syne";
   font-weight: 800;
+  width: 300px;
 }
 .infoBox {
   font-family: "Overpass";
@@ -161,6 +177,7 @@
 .infoText {
   font-size: 16px;
   font-family: "Overpass";
+  width: 300px;
 }
 .buttonBox{
   >a{
@@ -181,7 +198,6 @@
 }
 .switchBoxes {
   flex-direction: row-reverse;
-
   &:hover {
     .switchLeftBox {
       opacity: 1;
@@ -230,7 +246,7 @@
     right: 0px;
     left: 400px;
     transform: rotate(182deg);
-    opacity: 0.2;
+    opacity: 0;
   }
 }
 

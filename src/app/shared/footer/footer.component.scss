@@ -13,17 +13,29 @@
   > img {
     height: 40px;
   }
+  .imgHover{
+    &:hover {
+      transform: scale(1.5);
+      filter: drop-shadow(0 0 3px #4fbeff); /* Corrected filter */
+    }
+  }
+
   > div {
     gap: 42px;
     display: flex;
 
     justify-content: end;
-    > span {
+    > a {
       font-size: 16px;
       font-family: "Overpass";
       color: rgba(255, 252, 243, 1);
       font-weight: 400;
       margin: 4px;
+      text-decoration: none;
+      &:hover {
+        transform: scale(1.5);
+        filter: drop-shadow(0 0 3px #4fbeff); /* Corrected filter */
+      }
     }
   }
 }

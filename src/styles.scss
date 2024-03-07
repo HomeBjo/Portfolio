@@ -166,7 +166,8 @@
 .fontOverpass{
     font-family: 'Overpass';
   }
-  body{
+  *{
+    scroll-behavior: smooth;
     margin: 0;
   }
 

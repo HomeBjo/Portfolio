@@ -1,21 +1,27 @@
+<div class="containerMySkill">
 <div class="header">
   <div class="headerContainer"><div>My skills</div></div>
   <div class="skillContainer">
     <div>
-      @for(img of iconPath; track img){
-      <img src="/assets/img/{{ img }}" alt="" />
+      @for(img of iconPath; let i = $index; track i){
+      
+      <div><img src="/assets/img/{{ img }}" alt="" />
+        <span>{{label[i]}}</span></div>  
       }
     </div>
 
     <div>
-      @for(img of iconPath2; track img){
-      <img src="/assets/img/{{ img }}" alt="" />
+      @for(img of iconPath2; let i = $index; track i){
+      
+      <div><img src="/assets/img/{{ img }}" alt="" />
+        <span>{{label2[i]}}</span></div>  
       }
     </div>
   </div>
-  <img class="arrowRight" src="assets/img/arrow_right.png" alt="">
+  <a href="#portfolio"><img class="arrowRight" src="assets/img/arrow_right.png" alt=""></a>
+  
 </div>
-
+</div>
 <!-- 
 <img src="/assets/img/skill_ts.png" alt="" />
 <img src="/assets/img/skill_js.png" alt="" />

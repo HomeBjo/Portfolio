@@ -56,6 +56,6 @@ export class ContactComponent {
     }
   }
   toggleCheckbox() {
-    this.isChecked = !this.isChecked;
+    this.isChecked = !this.isChecked; // modulo prenzip
   }
 }

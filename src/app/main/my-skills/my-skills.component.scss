@@ -1,54 +1,65 @@
-
-.headerContainer{
-    display: flex;
-    justify-content: center;
-    margin-bottom: -104px;
-  
-    >div{display: flex;
-        background: rgb(255, 252, 243);
-        width: 560px;
-        justify-content: center;
-        align-items: center;}
+.containerMySkill{
+  display: flex;
+  justify-content: center;
+  background: rgb(255, 252, 243);
+  height: 100vh;
+  align-items: center;
 }
-
-
-.header{
-    font-family: "Syne";
-    font-weight: 800;
-    font-size: 78px;
+.headerContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: -104px;
+  > div {
+    display: flex;
     background: rgb(255, 252, 243);
-    &:hover{
-        color: rgba(0, 188, 143, 1);
-      }
-
-}
-.skillContainer{
-    border: solid 4px rgb(0, 0, 0);
-    min-height: 592px;
-    display: flex;
-    align-items: center;
+    width: 560px;
     justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: column;
-    gap: 78px;
-    margin: 62px;
-    >div{
-        display: flex;
-        gap: 8vw;
-        flex-wrap: wrap;
-        justify-content: center;
-        >img{
-             filter: blur(5px);
-            // filter: brightness(0);
-                &:hover{
-                    filter: blur(0px);
-                }
-            
-        }
-    }
-    
+    align-items: center;
+  }
 }
-.arrowRight{
-    height: 184px;
-    
+
+.header {
+  font-family: "Syne";
+  font-weight: 800;
+  font-size: 78px;
+  background: rgb(255, 252, 243);
+  &:hover {
+    color: rgba(0, 188, 143, 1);
+  }
+}
+.skillContainer {
+  border: solid 4px rgb(0, 0, 0);
+  min-height: 592px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 78px;
+  margin: 62px;
+  text-align: center;
+  > div {
+    display: flex;
+    gap: 8vw;
+    flex-wrap: wrap;
+    justify-content: center;
+    > div {
+      display: flex;
+      flex-direction: column;
+      color: black;
+      font-family: "Overpass";
+      font-size: 16px;
+      > img {
+        height: 67px;
+        filter: brightness(0);
+
+        &:hover {
+          filter: none;
+        }
+      }
+    }
+  }
+}
+.arrowRight {
+  height: 184px;
 }
