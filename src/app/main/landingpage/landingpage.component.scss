@@ -1,108 +1,178 @@
-.startScreen{
-height:100vh ;
-display: flex;
-align-items: center;
-justify-content: center;
-background: rgb(255, 252, 243);
-margin-top: -88px;
-transition: all 0.5s ease-in-out;
+.startScreen {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(255, 252, 243);
+  margin-top: -88px;
+  transition: all 0.5s ease-in-out;
 }
-div{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  transition: all 0.5s ease-in-out;
+  > span {
+    font-size: 128px;
+    font-family: "Syne";
+    font-weight: 800;
     transition: all 0.5s ease-in-out;
-    >span{ 
-        font-size: 128px;
-        font-family:'Syne';
-        font-weight: 800;
-        transition: all 0.5s ease-in-out;
-    }
+  }
 }
 
-.sektionName{
-    justify-content: center;
-    flex-direction: row;
-    padding-bottom: 142px;   // wegen mitte der h1 mal gucken 
+.sektionName {
+  justify-content: center;
+  flex-direction: row;
+  padding-bottom: 142px; // wegen mitte der h1 mal gucken
 }
-.name{
-    font-size: 48px!important;
-    font-family:'Overpass'!important;
-    color: rgba(0, 188, 143, 1);
-    font-weight: 700;
+.name {
+  font-size: 48px !important;
+  font-family: "Overpass" !important;
+  color: rgba(0, 188, 143, 1);
+  font-weight: 700;
 }
-.sektionBottom{
-    bottom: 48px;
-    position: absolute;
-    width: 100%;
-    flex-direction: unset;
-    justify-content: space-between;
-    align-items: normal;
-    >a{
-        margin-left: -5rem;
-        text-decoration: none;
-        font-family: "Overpass";
-        font-size: 25px;
-        font-weight: 400;
-        color: rgb(0, 0, 0);
-        rotate: 270deg;
-        height: 1px;
-        
-        &:hover {
-            font-size: 25px;
-        }
-        
+.sektionBottom {
+  bottom: 48px;
+  position: absolute;
+  width: 100%;
+  flex-direction: unset;
+  justify-content: space-between;
+  align-items: normal;
+  > a {
+    margin-left: -5rem;
+    text-decoration: none;
+    font-family: "Overpass";
+    font-size: 25px;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    rotate: 270deg;
+    height: 1px;
+
+    &:hover {
+      font-size: 25px;
     }
-    
+  }
 }
-#scrollContainer{
+#scrollContainer {
   margin-right: 4rem;
-    display: flex;
-    rotate: none;
-    justify-content: center;
-    flex-direction: column;
-    height: 81px;
-    margin-top: 53px;
-    
-    >img{
-        z-index: 1;
-        transition: transform 2s ease-in-out;
-        transform: translateY(0);
-        animation: moveDown 2s ease-in-out 2s infinite;
-        animation-delay: 2s;
+  display: flex;
+  rotate: none;
+  justify-content: center;
+  flex-direction: column;
+  height: 81px;
+  margin-top: 53px;
 
-    }
+  > img {
+    z-index: 1;
+    transition: transform 2s ease-in-out;
+    transform: translateY(0);
+    animation: moveDown 2s ease-in-out 2s infinite;
+    animation-delay: 2s;
+  }
 
-    >span{
-        z-index: 2;
-        font-size: 23px;
-        font-family: "Overpass";
-        font-weight: 300;
-        background-color: rgb(255, 252, 243);
-        padding-bottom: 60px;
-        margin-bottom: -46px;
-    }
+  > span {
+    z-index: 2;
+    font-size: 23px;
+    font-family: "Overpass";
+    font-weight: 300;
+    background-color: rgb(255, 252, 243);
+    padding-bottom: 60px;
+    margin-bottom: -46px;
+  }
 }
 @keyframes moveDown {
-    from {
-      transform: translateY(-100px);
-      
-    }
-    to {
-      transform: translateY(110px); 
-    
+  from {
+    transform: translateY(-100px);
+  }
+  to {
+    transform: translateY(110px);
+  }
+}
+
+@keyframes moveDownAndHide {
+  0% {
+    transform: translateY(-100px);
+  }
+  100% {
+    transform: translateY(100px);
+  }
+}
+
+@media screen and (max-width: 1053px) {
+  div {
+    > span {
+      font-size: 64px;
     }
   }
-
-
-  @keyframes moveDownAndHide {
-    0% {
-      transform: translateY(-100px);
- 
-    }
-    100% {
-      transform: translateY(100px); 
+  .sektionName {
+    > div > img {
+      height: 3px;
+      width: 189px;
     }
   }
-  
-  
+  .name {
+    font-size: 34px !important;
+  }
+  #scrollContainer {
+    margin-right: 2rem;
+    align-items: center;
+    > span {
+      margin-bottom: -52px;
+    }
+
+    > img {
+      height: 56px;
+      width: 35px;
+    }
+    > .dropBox {
+      font-size: 20px !important;
+    }
+  }
+  .sektionBottom {
+    > a {
+      margin-left: -6rem;
+      font-size: 22px;
+    }
+  }
+}
+
+@media screen and (max-width: 532px) {
+  div {
+    > span {
+      font-size: 36px;
+    }
+  }
+  .sektionName {
+    > div > img {
+      height: 3px;
+      width: 90px;
+      margin-left: 8px;
+    }
+  }
+  .name {
+    font-size: 18px !important;
+  }
+  #scrollContainer {
+    margin-right: 2rem;
+    align-items: center;
+    > span {
+      margin-bottom: -61px;
+      padding-bottom: 65px;
+    }
+
+    > img {
+      height: 56px;
+      width: 35px;
+    }
+    > .dropBox {
+      font-size: 18px !important;
+    }
+  }
+  .sektionBottom {
+    > a {
+      margin-left: -5rem;
+      font-size: 18px;
+      margin-top: 23px;
+    }
+  }
+}
