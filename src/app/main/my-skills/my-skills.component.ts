@@ -16,7 +16,7 @@ export class MySkillsComponent {
     'css.svg',
   ];
 
-  iconPath2 = ['firebase.svg', 'git.svg', 'scrum.svg', 'API.svg'];
+  iconPath2 = ['firebase.svg', 'git.svg', 'scrum.svg', 'API.svg','github2.svg'];
   label = [
     'Angular',
     'Typescript',
@@ -30,6 +30,7 @@ export class MySkillsComponent {
     'Git',
     'Scrum',
     'Rest-API',
+    'Github',
   ];
 
   constructor() {}

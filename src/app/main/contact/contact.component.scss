@@ -131,9 +131,10 @@ input:focus:valid {
     font-weight: 400;
     color: rgba(255, 252, 243, 1);
 
-    > span.switch {
+    > a.switch {
       color: rgba(0, 188, 143, 1);
       transition: 0.3s ease-in-out;
+      text-decoration: none;
 
       &:hover {
         filter: drop-shadow(0 0 0.75rem white);

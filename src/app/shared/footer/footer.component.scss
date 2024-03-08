@@ -15,6 +15,7 @@
   }
   .imgHover{
     &:hover {
+      cursor: pointer;
       transform: scale(1.5);
       filter: drop-shadow(0 0 3px #4fbeff); /* Corrected filter */
     }
@@ -23,6 +24,7 @@
   > div {
     gap: 42px;
     display: flex;
+    align-items: baseline;
 
     justify-content: end;
     > a {

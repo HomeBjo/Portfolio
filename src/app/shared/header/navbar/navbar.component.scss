@@ -1,6 +1,15 @@
+
+$color1: black;
+
 .barContainer{
     background-color: rgb(255, 252, 243);
-    height: calc(100vh + 92px);
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    justify-content: end;
+    height: calc(100vh - 92px);
 }  
 img{
     cursor: pointer;
@@ -16,19 +25,31 @@ img{
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    gap: 80px;
-    position: fixed;
-    bottom: 0;
-    top: 92px;
-    width: 100vw;
-    z-index: 10;
- 
+    align-items: center;
     a{
+        a::before {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px; 
+            bottom: 0;
+            left: 0;
+            background-color: #000; 
+            transition: width 0.3s ease; 
+          }
+          
+          a:hover::before {
+            width: 100%;
+          }
         text-decoration: none;
         font-size: 96px;
         font-weight: 700;
         font-family: 'Syne';
         color: black;
+        &:hover{
+            color: rgb(0, 188, 143);
+        }
+        
     }
 }
 
@@ -38,3 +59,54 @@ img{
     height: 300px; 
     background-size: cover;
 }
+
+.button {
+    position: relative;
+    padding:16px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+    font-size: 18px;
+    margin: 24px;
+  
+    &.type1 {
+      // Effect one
+      &::after,
+      &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 20%;
+        height: 20%;
+        border: 4px solid;
+        transition: all 0.6s ease;
+        border-radius: 2px;
+      }
+  
+      &::after {
+        bottom: 0;
+        right: 0;
+        border-top-color: transparent;
+        border-left-color: transparent;
+        border-bottom-color: $color1;
+        border-right-color: $color1;
+      }
+  
+      &::before {
+        top: 0;
+        left: 0;
+        border-bottom-color: transparent;
+        border-right-color: transparent;
+        border-top-color: $color1;
+        border-left-color: $color1;
+      }
+  
+      &:hover::after,
+      &:hover::before {
+        width: 50%;
+        height: 50%;
+      }
+    }
+  }
+  
