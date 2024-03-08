@@ -36,7 +36,7 @@
   justify-content: center;
   flex-wrap: wrap;
   flex-direction: column;
-  gap: 78px;
+  gap: 145px;
   margin: 69px;
   text-align: center;
   > div {
@@ -64,4 +64,73 @@
 .arrowRight {
   height: 184px;
   padding-left: 95px;
+}
+
+@media screen and (max-width: 1380px) {
+  .headerContainer {
+    font-size: 57px;
+    > div {
+      width: 421px;
+    }
+  }
+  .skillContainer {
+    gap: 0;
+    > div {
+      gap: 9vw;
+      margin: 21px;
+      margin-top: 73px;
+    }
+  }
+}
+@media screen and (max-width: 1170px) {
+  .headerContainer {
+    font-size: 46px;
+    margin-bottom: -92px;
+    > div {
+      width: 337px;
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .headerContainer {
+    font-size: 46px;
+    > div {
+      width: 329px;
+    }
+  }
+  .arrowRight {
+    height: 115px;
+  }
+}
+@media screen and (max-width: 637px) {
+  .skillContainer {
+    margin: 6px;
+  }
+  .headerContainer {
+    font-size: 31px;
+    margin-bottom: -23px;
+    > div {
+      width: 226px;
+    }
+  }
+}
+@media screen and (max-width: 506px) {
+  .headerContainer {
+    font-size: 31px;
+    margin-bottom: 0px;
+  }
+}
+@media screen and (max-width: 430px) {
+  .skillContainer {
+    > div {
+      gap: 7vw;
+      margin: 1px;
+      margin-top: 12px;
+    }
+  }
+  .headerContainer {
+    font-size: 31px;
+    margin-bottom: 0px;
+  }
 }
