@@ -1,6 +1,11 @@
 <div class="container">
     <div>
-       <img class="logo" src="/assets/img/BTE 100px_Ohne Frame_CYAN.png" alt=""> <img src="/assets/img/burger_menu.png" alt="">
+       <img class="logo" src="/assets/img/BTE 100px_Ohne Frame_CYAN.png" alt=""> 
+       <img (click)="showSideMenu()" src="./assets/img/{{ showFiller? 'burger_menu.png' : 'burger_open.png' }}" alt="iconsMenu" 
+       style="transition: 0.3s ease-in-out;" class="navBarIcon">
 
     </div>
 </div>
+@if (!showFiller) {
+    <app-navbar (closeNavigationBar)="showSideMenu()" class="navBar"></app-navbar>
+}
