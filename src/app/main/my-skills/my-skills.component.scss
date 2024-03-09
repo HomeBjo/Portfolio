@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   background: rgb(255, 252, 243);
-  height: 100vh;
+  height:calc(100vh + 92px);
   align-items: center;
 }
 .headerContainer {
@@ -106,6 +106,7 @@
 @media screen and (max-width: 637px) {
   .skillContainer {
     margin: 6px;
+    min-height: 0px;
   }
   .headerContainer {
     font-size: 31px;
@@ -116,6 +117,9 @@
   }
 }
 @media screen and (max-width: 506px) {
+  .containerMySkill{
+    height: calc(100vh + 132px);
+  }
   .headerContainer {
     font-size: 31px;
     margin-bottom: 0px;

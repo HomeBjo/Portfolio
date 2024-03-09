@@ -1,6 +1,6 @@
 .containerAboutMe {
   display: flex;
-  height: 100vh;
+  height:calc(100vh + 92px);
   justify-content: center;
   align-items: center;
   background-color: rgb(255, 252, 243);
@@ -125,6 +125,9 @@ img {
   }
 }
 @media screen and (max-width: 490px) {
+  .containerAboutMe{
+    height: calc(100vh + 214px);
+  }
   .headerAboutMe {
     font-size: 31px;
   }
@@ -133,6 +136,7 @@ img {
   }
   .contentAboutMe {
     max-width: 80vw;
+    gap: 28px;
   }
   .discriptionAboutMe {
     font-size: 19px;
@@ -140,6 +144,7 @@ img {
   .imgContainer {
     > img {
       height: 241px;
+      margin-top: 21px;
     }
   }
 }

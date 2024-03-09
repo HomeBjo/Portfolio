@@ -10,7 +10,10 @@ $color1: black;
     z-index: 3;
     justify-content: end;
     height: calc(100vh - 92px);
-}  
+    transition: all 0.2s ease-in-out;
+    animation: slideLeft 0.5s ease-in-out;
+  }
+
 img{
     cursor: pointer;
     object-fit: contain;
@@ -107,6 +110,14 @@ img{
         width: 50%;
         height: 50%;
       }
+    }
+  }
+  @keyframes slideLeft {
+    to {
+      transform: translateX(0%);
+    }
+    from {
+      transform: translateX(-100%);
     }
   }
   
