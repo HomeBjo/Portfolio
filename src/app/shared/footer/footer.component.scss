@@ -75,27 +75,28 @@
     padding: 57px;
   }
   .rightSide {
-    >div{
+    > div {
       gap: 8px;
       > a {
         &:hover {
           transform: scale(1.1);
         }
       }
-
     }
   }
 }
 @media screen and (max-width: 560px) {
-  .footer{
-    height: 101px;
+  .footer {
+    height: 121px;
     padding: 0;
     justify-content: center;
   }
   .leftSide {
-  > div {
-    > span {
-      font-size: 14px;
-      width: 83px;}}
-
-}}
+    > div {
+      > span {
+        font-size: 14px;
+        width: 83px;
+      }
+    }
+  }
+}
