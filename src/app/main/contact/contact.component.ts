@@ -6,22 +6,21 @@ import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [FormsModule,CommonModule],
+  imports: [FormsModule, CommonModule],
   templateUrl: './contact.component.html',
-  styleUrl: './contact.component.scss'
+  styleUrl: './contact.component.scss',
 })
 export class ContactComponent {
-
-  isChecked : boolean = false;
+  isChecked: boolean = false;
   isImageVisible: boolean = true;
 
   http = inject(HttpClient);
 
   contactData = {
-    name:"",
-    email:"",
-    message:"",
-  }
+    name: '',
+    email: '',
+    message: '',
+  };
 
   mailTest = true;
 
@@ -38,7 +37,8 @@ export class ContactComponent {
 
   onSubmit(ngForm: NgForm) {
     if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
-      this.http.post(this.post.endPoint, this.post.body(this.contactData))
+      this.http
+        .post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
             //noch was rein machen damit man weis das was passiert ist
@@ -51,7 +51,6 @@ export class ContactComponent {
           complete: () => console.info('send post complete'),
         });
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
-
       ngForm.resetForm();
     }
   }

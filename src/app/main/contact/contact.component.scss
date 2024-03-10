@@ -42,17 +42,17 @@
 .contactHeader {
   display: flex;
   width: 90vw;
-  
+
   margin-top: 131px;
   > span {
     font-size: 78px;
     font-family: "Syne";
     font-weight: 800;
     color: rgb(255, 252, 243);
-    &:hover{
+    &:hover {
       color: rgba(0, 188, 143, 1);
     }
-  } 
+  }
 }
 .contactInfo {
   display: flex;
@@ -186,4 +186,58 @@ input:focus:valid {
 }
 .aktivInput {
   @include activInputs();
+}
+
+@media screen and (max-width: 1380px) {
+  .contactHeader {
+    > span {
+      font-size: 57px;
+    }
+  }
+}
+@media screen and (max-width: 1170px) {
+  .contactHeader {
+    > span {
+      font-size: 46px;
+    }
+  }
+}
+@media screen and (max-width: 637px) {
+  .contactHeader {
+    > span {
+      font-size: 31px;
+    }
+  }
+  .sampleOne{
+    font-size: 24px;
+
+  }
+  .sampleTwo{
+    font-size: 19px;
+
+  }
+}
+@media screen and (max-width: 560px) {
+  .contactHeader {
+    width: 78vw;
+
+  }
+  .contactInfo{
+  text-align: center;
+}
+.sampleOne{
+  width: 216px;
+
+}
+.sampleTwo{
+  width: 200px;
+}
+.checkBox{
+  width: 200px;
+  margin-top: 16px;
+}
+button{
+  margin-top: 16px;
+}
+
 }
