@@ -1,6 +1,6 @@
 .containerAboutMe {
   display: flex;
-  height:calc(100vh + 92px);
+  height:calc(100vh);
   justify-content: center;
   align-items: center;
   background-color: rgb(255, 252, 243);
@@ -26,7 +26,7 @@
 }
 
 img {
-  height: 391px;
+  height: 553px;
   margin-top: 93px;
 }
 
@@ -85,7 +85,7 @@ img {
   }
   .imgContainer {
     > img {
-      height: 321px;
+      height: 438px;
     }
   }
 }
@@ -115,7 +115,7 @@ img {
   }
   .imgContainer {
     > img {
-      height: 290px;
+      height: 380px;
     }
   }
   .sektionArrowLeft {
@@ -126,7 +126,7 @@ img {
 }
 @media screen and (max-width: 490px) {
   .containerAboutMe{
-    height: calc(100vh + 214px);
+    height: calc(100vh + 201px);
   }
   .headerAboutMe {
     font-size: 31px;
