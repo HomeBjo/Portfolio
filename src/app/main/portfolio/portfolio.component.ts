@@ -18,6 +18,7 @@ export class PortfolioComponent {
   ];
   title = ['Join', 'El Pollo Loco'];
   usedTech = ['JavaScript | Html | CSS', 'JavaScript | Html | CSS'];
+  links = ['https://xn--bjrnteneicken-jmb.de/join/html/login.html','https://xn--bjrnteneicken-jmb.de/el_pollo_loco/index.html']
 
   constructor() {
     if (typeof document !== 'undefined') {

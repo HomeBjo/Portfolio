@@ -22,10 +22,10 @@ export class ContactComponent {
     message: '',
   };
 
-  mailTest = true;
+  mailTest = false;  // sonst true beim testen ./../../../assets usw
 
   post = {
-    endPoint: 'https://deineDomain.de/sendMail.php',
+    endPoint: 'https://xn--bjrnteneicken-jmb.de/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
