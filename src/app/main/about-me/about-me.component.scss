@@ -124,9 +124,13 @@ img {
     }
   }
 }
+@media screen and (max-height: 1031px) {
+  .containerAboutMe{
+    height:calc(100vh + 130px)
+  }}
 @media screen and (max-width: 490px) {
   .containerAboutMe{
-    height: calc(100vh + 201px);
+    height: calc(100vh + 234px);
   }
   .headerAboutMe {
     font-size: 31px;
@@ -148,3 +152,8 @@ img {
     }
   }
 }
+@media screen and (max-width: 375px) {
+  .containerAboutMe{
+    height: calc(100vh + 281px);
+}}
+

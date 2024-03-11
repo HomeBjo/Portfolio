@@ -28,6 +28,7 @@ img {
   justify-content: center;
   text-align: center;
   align-items: center;
+  margin-bottom: 146px;
   a {
     a::before {
       content: "";
@@ -55,7 +56,7 @@ img {
 }
 // ("./../../../assets/img/contact_back_img.png");
 .boxWithIcons {
-  background-image: url("/assets/img/contact_back_img.png"); 
+  background-image: url("/assets/img/contact_back_img.png");
   width: 100%;
   height: 300px;
   background-size: cover;
@@ -118,9 +119,56 @@ img {
     transform: translateX(-100%);
   }
 }
-
-@media screen and (max-width: 560px) {
+@media screen and (max-height: 1080px) {
   .boxWithLinks {
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (max-height: 1031px) {
+  .boxWithLinks {
+    margin-bottom: 40px;
+    > a {
+      font-size: 41px;
+      margin: 12px;
+    }
+  }
+}
+@media screen and (max-height: 896px) {
+  .boxWithLinks {
+    margin-bottom: 27px;
+    > a {
+      font-size: 32px;
+      margin: 6px;
+    }
+  }
+}
+
+@media screen and (max-height: 800px) {
+  .boxWithLinks {
+    margin-bottom: 0px;
+    > a {
+      font-size: 32px;
+      margin: 6px;
+    }
+  }
+}
+
+@media screen and (max-height: 786px) {
+  .boxWithLinks {
+    margin-bottom: 87px;
+    > a {
+      margin: 6px;
+    }
+  }
+  .boxWithIcons {
+    height: 97px;
+  }
+}
+
+@media screen and (max-height: 568px) {
+  .boxWithLinks {
+    margin-bottom: 0px;
     > a {
       font-size: 34px;
       margin: 1px;
