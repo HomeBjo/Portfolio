@@ -1,3 +1,9 @@
+.content{
+  background: rgb(255, 252, 243);
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
 .startScreen {
   height: calc(100vh + 92px);
   display: flex;
@@ -41,6 +47,7 @@ div {
   flex-direction: unset;
   justify-content: space-between;
   align-items: normal;
+  max-width: 1920px;
   > a {
     margin-left: -5rem;
     text-decoration: none;

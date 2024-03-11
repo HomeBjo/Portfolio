@@ -1,9 +1,16 @@
+.content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(255, 252, 243);
+}
 .containerMySkill {
   display: flex;
   justify-content: center;
   background: rgb(255, 252, 243);
   height:calc(100vh + 92px);
   align-items: center;
+  max-width: 1920px;
 }
 .headerContainer {
   display: flex;
@@ -138,3 +145,17 @@
     margin-bottom: 0px;
   }
 }
+@media screen and (min-width: 1921px) {
+  .skillContainer {
+    margin: -3px;
+    > div {
+      gap: 10vw;
+     
+      > div {
+        font-size: 20px;
+        > img {
+          height: 120px;
+}}}}
+.headerContainer{
+  margin-bottom: -39px;
+}}
