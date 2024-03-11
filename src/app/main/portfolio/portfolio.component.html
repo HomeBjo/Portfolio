@@ -1,49 +1,48 @@
 <div class="content">
-<div class="mainBoxContent">
-  <div class="mainBoxHeader">
-    <span class="header">Portfolio</span>
-    <span class="headerdescription"
-      >Explore selection of my work here - Interact with projects to see my
-      skills in action</span
-    >
-  </div>
+  <div class="mainBoxContent">
+    <div class="mainBoxHeader">
+      <span class="header">Portfolio</span>
+      <span class="headerdescription"
+        >Explore selection of my work here - Interact with projects to see my
+        skills in action</span
+      >
+    </div>
 
-  <div class="mainBox">
-    @for(img of imgs; let i = $index; track i;){
-    <div data-aos-offset="300" data-aos="zoom-out">
-      <div class="project" [ngClass]="{ switchBoxes: i % 2 !== 0 }">
-        <div>
-          <span class="profileCount" [ngClass]="{ switchCount: i % 2 !== 0 }"
-            >0{{ [i + 1] }}/0{{ [imgs.length] }}</span
-          >
-          <div
-            class="hoverContainer"
-            [ngClass]="{ hoverContainerSwitch: i % 2 !== 0 }"
-          ></div>
-          <div><img class="imgs" src="assets/img/{{ img }}" alt="" /></div>
-          <div
-            class="hoverContainerImg"
-            [ngClass]="{ hoverContainerImgSwitch: i % 2 !== 0 }"
-          >
-            <img src="assets/img/arrow_side.png" alt="" />
+    <div class="mainBox">
+      @for(img of imgs; let i = $index; track i;){
+      <div data-aos-offset="300" data-aos="zoom-out">
+        <div class="project" [ngClass]="{ switchBoxes: i % 2 !== 0 }">
+          <div>
+            <span class="profileCount" [ngClass]="{ switchCount: i % 2 !== 0 }"
+              >0{{ [i + 1] }}/0{{ [imgs.length] }}</span
+            >
+            <div
+              class="hoverContainer"
+              [ngClass]="{ hoverContainerSwitch: i % 2 !== 0 }"
+            ></div>
+            <div><img class="imgs" src="assets/img/{{ img }}" alt="" /></div>
+            <div
+              class="hoverContainerImg"
+              [ngClass]="{ hoverContainerImgSwitch: i % 2 !== 0 }"
+            >
+              <img src="assets/img/arrow_side.png" alt="" />
+            </div>
           </div>
-        </div>
 
-        <div class="leftBox" [ngClass]="{ switchLeftBox: i % 2 !== 0 }">
-          <span class="portfolioTitle">{{ title[i] }}</span>
-          <div class="infoBox">
-            <span>{{ usedTech[i] }}</span>
-          </div>
-          <span class="infoText">{{ description[i] }}</span>
-          <div class="buttonBox">
-            <a href="{{ links[i] }}"  target="_blank">Live</a>
-            <a href="https://github.com/HomeBjo" target="_blank">GitHub</a>
+          <div class="leftBox" [ngClass]="{ switchLeftBox: i % 2 !== 0 }">
+            <span class="portfolioTitle">{{ title[i] }}</span>
+            <div class="infoBox">
+              <span>{{ usedTech[i] }}</span>
+            </div>
+            <span class="infoText">{{ description[i] }}</span>
+            <div class="buttonBox">
+              <a href="{{ links[i] }}" target="_blank">Live</a>
+              <a href="{{ gitLinks[i] }}" target="_blank">GitHub</a>
+            </div>
           </div>
         </div>
       </div>
+      }
     </div>
-
-    }
   </div>
-</div>
 </div>

@@ -184,6 +184,15 @@ input:focus:valid {
     left: -30px;
   }
 }
+.backArrow{
+  position: relative;
+  left: 37vw;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 3px #4fbeff);
+  }
+}
 .aktivInput {
   @include activInputs();
 }
@@ -239,5 +248,4 @@ input:focus:valid {
 button{
   margin-top: 16px;
 }
-
 }

@@ -4,10 +4,12 @@ div{
     display: flex;
     flex-direction: column;
     text-align: center;
+    font-family: 'Overpass';
 }
 
 h1,h2,h3{
-    color: rgb(0,188,143)
+    color: rgb(0,188,143);
+    font-family: 'Syne';
 }
 @media screen and (max-width: 450px) {
     div{

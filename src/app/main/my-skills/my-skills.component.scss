@@ -1,4 +1,4 @@
-.content{
+.content {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -8,9 +8,10 @@
   display: flex;
   justify-content: center;
   background: rgb(255, 252, 243);
-  height:calc(100vh + 92px);
+  height: calc(100vh + 92px);
   align-items: center;
   max-width: 1920px;
+  margin-top: 88px;
 }
 .headerContainer {
   display: flex;
@@ -114,6 +115,16 @@
   .skillContainer {
     margin: 6px;
     min-height: 0px;
+    > div {
+      gap: 10vw;
+
+      > div {
+        font-size: 20px;
+        > img {
+          height: 45px;
+        }
+      }
+    }
   }
   .headerContainer {
     font-size: 31px;
@@ -124,8 +135,9 @@
   }
 }
 @media screen and (max-width: 506px) {
-  .containerMySkill{
+  .containerMySkill {
     height: calc(100vh + 132px);
+    margin-top: 0px;
   }
   .headerContainer {
     font-size: 31px;
@@ -150,12 +162,23 @@
     margin: -3px;
     > div {
       gap: 10vw;
-     
+
       > div {
         font-size: 20px;
         > img {
           height: 120px;
-}}}}
-.headerContainer{
-  margin-bottom: -39px;
-}}
+        }
+      }
+    }
+  }
+  .headerContainer {
+    margin-bottom: -39px;
+  }
+}
+// @media screen and (max-height: 900px) {
+//   .containerMySkill{
+//     height: calc(100vh + 205px);
+//   }
+ 
+
+// }
