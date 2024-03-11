@@ -1,3 +1,18 @@
 div{
     background: rgb(255, 252, 243);
+    gap: 12px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+h1,h2,h3{
+    color: rgb(0,188,143)
+}
+@media screen and (max-width: 450px) {
+    div{
+        >h1,p,ul{
+            word-break: break-word;
+        }
+    }
 }
