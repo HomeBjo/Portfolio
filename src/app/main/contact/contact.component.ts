@@ -25,7 +25,7 @@ export class ContactComponent {
   };
 
   mailTest = false;  // sonst true beim testen ./../../../assets usw
-
+  sendMail = false;
   post = {
     endPoint: 'https://xn--bjrnteneicken-jmb.de/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
@@ -44,7 +44,13 @@ export class ContactComponent {
         .subscribe({
           next: (response) => {
             //noch was rein machen damit man weis das was passiert ist
-
+            this.sendMail =true
+            setTimeout(() => {
+              this.sendMail =false
+              
+            }, 4000);
+            
+            this.isChecked=false
             ngForm.resetForm();
           },
           error: (error) => {

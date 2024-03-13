@@ -35,10 +35,11 @@
         "contactR" : "Dein name ist erforderlich",
         "contactR2" : "Dein email ist erforderlich",
         "contactR3" : "Deine nachricht ist leer",
-        "legal" : "Ich habe das gelesen", 
+        "legal" : "Ich habe das", 
         "legal2" : "Impressum",
-        "legal3" :"und stimme der oben beschriebenen Verarbeitung meiner Daten zu.",
-        "button" : "Nachricht senden"
+        "legal3" :" gelesen und stimme der oben beschriebenen Verarbeitung meiner Daten zu.",
+        "button" : "Nachricht senden",
+        "send" : "Erfolgreich gesendet"
         
     },
     "footer":{

@@ -193,6 +193,9 @@ input:focus:valid {
     filter: drop-shadow(0 0 3px #4fbeff);
   }
 }
+.sendSpan{
+  color: rgba(0, 188, 143, 1);
+}
 .aktivInput {
   @include activInputs();
 }
