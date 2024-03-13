@@ -1,9 +1,18 @@
 .footer {
   background-color: rgb(0, 0, 0);
+  display: flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container{
   height: 69px;
+  padding: 36px;
   display: flex;
   justify-content: space-between;
-  padding: 36px;
+  align-items: center;
+  max-width: 1920px;
+  width: 100vw;
 }
 
 .rightSide {
@@ -98,5 +107,8 @@
         width: 83px;
       }
     }
+  }
+  .container{
+    padding: 0;
   }
 }

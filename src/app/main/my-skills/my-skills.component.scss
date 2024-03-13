@@ -147,9 +147,10 @@
 }
 @media screen and (min-width: 1921px) {
   .skillContainer {
-    margin: -3px;
+    margin: 0px;
+  }
     > div {
-      gap: 10vw;
+      gap: 200px;
 
       > div {
         font-size: 20px;
@@ -162,7 +163,7 @@
   .headerContainer {
     margin-bottom: -39px;
   }
-}
+
 // @media screen and (max-height: 900px) {
 //   .containerMySkill{
 //     height: calc(100vh + 205px);

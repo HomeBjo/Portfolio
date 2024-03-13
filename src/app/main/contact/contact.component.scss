@@ -42,7 +42,7 @@
 .contactHeader {
   display: flex;
   width: 90vw;
-
+  max-width: 1920px;
   margin-top: 131px;
   > span {
     font-size: 78px;
@@ -252,3 +252,8 @@ button{
   margin-top: 16px;
 }
 }
+@media screen and (min-width: 2001px) {
+.backArrow{
+ 
+  left: unset;
+}}

@@ -1,11 +1,12 @@
 <div class="container">
     <div>
-       <img class="logo" src="/assets/img/BTE 100px_Ohne Frame_CYAN.png" alt=""> 
-       <img (click)="showSideMenu()" src="./assets/img/{{ showFiller? 'burger_menu.png' : 'burger_open.png' }}" alt="iconsMenu" 
-       style="transition: 0.3s ease-in-out;" class="navBarIcon">
-       <span class="flipp" (click)="changeValue()">
+      <div><img class="logo" src="/assets/img/BTE 100px_Ohne Frame_CYAN.png" alt=""> </div>
+       <div><img (click)="showSideMenu()" src="./assets/img/{{ showFiller? 'burger_menu.png' : 'burger_open.png' }}" alt="iconsMenu" style="transition: 0.3s ease-in-out;" class="navBarIcon">  <span class="flipp" (click)="changeValue()">
         {{ currentLang === 'eng' ? 'EN' : 'DE' }}
-      </span>
+      </span></div>
+       
+       
+      
     </div>
     
 </div>
