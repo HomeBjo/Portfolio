@@ -4,6 +4,11 @@
        <img (click)="showSideMenu()" src="./assets/img/{{ showFiller? 'burger_menu.png' : 'burger_open.png' }}" alt="iconsMenu" 
        style="transition: 0.3s ease-in-out;" class="navBarIcon">
 
+
+       <span class="flag" (click)="changeValue()">
+        {{ currentLang === 'eng' ? 'EN' : 'DE' }}
+      </span>
+    
     </div>
 </div>
 @if (!showFiller) {

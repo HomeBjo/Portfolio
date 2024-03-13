@@ -1,11 +1,12 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { TranslateModule} from '@ngx-translate/core';
 import AOS from 'aos';
 
 @Component({
   selector: 'app-portfolio',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule,TranslateModule],
   templateUrl: './portfolio.component.html',
   styleUrl: './portfolio.component.scss',
 })
@@ -26,6 +27,7 @@ export class PortfolioComponent {
     'https://github.com/HomeBjo/JOIN',
     'https://github.com/HomeBjo/el_pollo_loco',
   ];
+  projectKeys = ['join', 'elpollo'];
 
   constructor() {
     if (typeof document !== 'undefined') {

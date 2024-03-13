@@ -1,29 +1,29 @@
 <div class="contactContainer">
-  <div class="contactHeader"><span>Say Hi!</span></div>
+  <div class="contactHeader"><span>{{ 'contact.title' | translate }}</span></div>
   <div class="contactInfo">
-    <span class="sampleOne">Want discuss a new project?</span>
+    <span class="sampleOne">{{ 'contact.title2' | translate }}</span>
     <span class="sampleTwo"
-      >Say hello! let's discuss your ideas and make it happen</span
+      >{{ 'contact.title3' | translate }}</span
     >
   </div>
   <div>
     <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm" class="contactForm">
       <!-- <label for="name">was</label> -->
-      <input #name="ngModel" [(ngModel)]="contactData.name" id="name" name="name" type="text" placeholder="Your name" required [ngClass]="{'aktivInput': name.valid && name.touched}" />
+      <input #name="ngModel" [(ngModel)]="contactData.name" id="name" name="name" type="text" placeholder="{{ 'contact.contact' | translate }}" required [ngClass]="{'aktivInput': name.valid && name.touched}" />
       @if (!name.valid && name.touched) {
-        <div class="validationText"><span style="color: white; margin-top: 3px;">Your name is required</span>
+        <div class="validationText"><span style="color: white; margin-top: 3px;">{{ 'contact.contactR' | translate }}</span>
           <img src="/assets/img/vali_false.png" alt="">
         </div>
     }
-      <input #email="ngModel" [(ngModel)]="contactData.email" id="email" name="email"  type="email" placeholder="Your email" required [ngClass]="{'aktivInput': email.valid && email.touched}" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"/>
+      <input #email="ngModel" [(ngModel)]="contactData.email" id="email" name="email"  type="email" placeholder="{{ 'contact.contact2' | translate }}" required [ngClass]="{'aktivInput': email.valid && email.touched}" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"/>
       @if (!email.valid && email.touched) {
-        <div class="validationText"><span style="color: white; margin-top: 3px;">Your email is required</span>
+        <div class="validationText"><span style="color: white; margin-top: 3px;">{{ 'contact.contactR2' | translate }}</span>
            <img src="/assets/img/vali_false.png" alt="">
         </div>
     }
-      <textarea #message="ngModel" minlength="10" [(ngModel)]="contactData.message" name="message" id="message" cols="30" rows="10" placeholder="Your message"required [ngClass]="{'aktivInput': message.valid && message.touched}"></textarea>
+      <textarea #message="ngModel" minlength="10" [(ngModel)]="contactData.message" name="message" id="message" cols="30" rows="10" placeholder="{{ 'contact.contact3' | translate }}"required [ngClass]="{'aktivInput': message.valid && message.touched}"></textarea>
       @if (!message.valid && message.touched) {
-          <div class="validationText"><span style="color: white; margin-top: 3px;">Your message is empty</span>
+          <div class="validationText"><span style="color: white; margin-top: 3px;">{{ 'contact.contactR3' | translate }}</span>
              <img src="/assets/img/vali_false.png" alt="">
           </div>
       }
@@ -34,11 +34,10 @@
           alt="Current Image"
         />
         <span>
-          I've read the <a class="switch" href="legalnotice">Legal notice</a> and agree to
-          the processing of my data as outlined.
+          {{ 'contact.legal' | translate }} <a class="switch" href="legalnotice">{{ 'contact.legal2' | translate }}</a> {{ 'contact.legal3' | translate }}
         </span>
       </div>
-      <button [ngClass]="{'aktivButton': isChecked && name.valid && message.valid&& email.valid }" [disabled]="!isChecked">Send message</button>
+      <button [ngClass]="{'aktivButton': isChecked && name.valid && message.valid&& email.valid }" [disabled]="!isChecked">{{ 'contact.button' | translate }}</button>
     </form>
   </div>
   <a href="#landingPage"> <img class="backArrow" src="/assets/img/arrow_back.png" alt=""></a>

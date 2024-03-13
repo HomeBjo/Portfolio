@@ -1,0 +1,54 @@
+{
+    "landingPage":{
+        "title" : "Frontend",
+        "title2" : "Entwickler",
+        "arrow" : "Scroll",
+        "arrow2" : "Down"
+
+    },
+    "aboutMe":{
+        "title" : "Über mich",
+        "description" : " Hallo, ich bin Björn ten Eicken, ein Frontend-Entwickler aus der Nähe von Remscheid, Deutschland. Ich habe mich schon immer für IT-Technologie im Bereich Web interessiert und habe mich daher für eine Spezialisierung auf Angular und Javascript entschieden. Ich habe im letzten Jahr durch die Erstellung vieler Projekte viel Erfahrung gesammelt und bin sicher, dass ich Ihnen mit meiner Erfahrung in Ihrem Unternehmen weiterhelfen kann.",
+        "button" : "Lass uns reden"
+    },
+    "mySkills":{
+        "title" : "Meine skills"
+    }
+    ,
+    "portfolio":{
+        "title" : "Portfolio",
+        "title2" : "Entdecken Sie hier eine Auswahl meiner Arbeiten. Interagieren Sie mit Projekten, um meine Fähigkeiten in Aktion zu sehen",
+        
+        "descriptions": {
+            "join": "Task-Manager, inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mithilfe von Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.",
+            "elpollo": "Spielen Sie ein kleines Jump and Run, indem Sie dem kleinen Hai namens Sharkie bei seinem Abenteuer helfen."
+        }
+    }
+    ,
+    "contact":{
+        "title" : "Sag Hi!",
+        "title2" : "Möchten Sie ein neues Projekt planen?",
+        "title3" : "Sag Hallo! Lassen Sie uns Ihre Ideen besprechen und sie in die Tat umsetzen",
+        "contact" : "Dein name",
+        "contact2" : "Deine email",
+        "contact3" : "Deine nachricht",
+        "contactR" : "Dein name ist erforderlich",
+        "contactR2" : "Dein email ist erforderlich",
+        "contactR3" : "Deine nachricht ist leer",
+        "legal" : "Ich habe das gelesen", 
+        "legal2" : "Impressum",
+        "legal3" :"und stimme der oben beschriebenen Verarbeitung meiner Daten zu.",
+        "button" : "Nachricht senden"
+        
+    },
+    "footer":{
+        "legal" : "Impressum"
+    },
+    "headerM":{
+        "header" : "Über mich",
+        "header2" : "Meine skills",
+        "header3" : "Portfolio",
+        "header4" : "Kontakt"
+    }
+    
+}

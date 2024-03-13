@@ -1,10 +1,9 @@
 <div class="content">
   <div class="mainBoxContent">
     <div class="mainBoxHeader">
-      <span class="header">Portfolio</span>
+      <span class="header">{{ 'portfolio.title' | translate }}</span>
       <span class="headerdescription"
-        >Explore selection of my work here - Interact with projects to see my
-        skills in action</span
+        >{{ 'portfolio.title2' | translate }}</span
       >
     </div>
 
@@ -34,7 +33,7 @@
             <div class="infoBox">
               <span>{{ usedTech[i] }}</span>
             </div>
-            <span class="infoText">{{ description[i] }}</span>
+            <span class="infoText">{{ 'portfolio.descriptions.' + projectKeys[i] | translate }}</span>
             <div class="buttonBox">
               <a href="{{ links[i] }}" target="_blank">Live</a>
               <a href="{{ gitLinks[i] }}" target="_blank">GitHub</a>
