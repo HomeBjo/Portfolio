@@ -20,7 +20,7 @@
   > div {
     display: flex;
     background: rgb(255, 252, 243);
-    width: 560px;
+    
     justify-content: center;
     align-items: center;
   }
@@ -77,9 +77,6 @@
 @media screen and (max-width: 1380px) {
   .headerContainer {
     font-size: 57px;
-    > div {
-      width: 421px;
-    }
   }
   .skillContainer {
     gap: 0;
@@ -94,18 +91,12 @@
   .headerContainer {
     font-size: 46px;
     margin-bottom: -92px;
-    > div {
-      width: 337px;
-    }
   }
 }
 
 @media screen and (max-width: 960px) {
   .headerContainer {
     font-size: 46px;
-    > div {
-      width: 329px;
-    }
   }
   .arrowRight {
     height: 115px;
@@ -129,9 +120,6 @@
   .headerContainer {
     font-size: 31px;
     margin-bottom: -23px;
-    > div {
-      width: 226px;
-    }
   }
 }
 @media screen and (max-width: 506px) {
@@ -153,7 +141,7 @@
     }
   }
   .headerContainer {
-    font-size: 31px;
+    font-size: 28px;
     margin-bottom: 0px;
   }
 }
