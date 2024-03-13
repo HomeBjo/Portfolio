@@ -71,6 +71,9 @@
 }
 
 @media screen and (max-width: 637px) {
+  .container{
+    padding: 0;
+  }
   .leftSide {
     flex-direction: column;
     display: flex;
@@ -81,7 +84,7 @@
     }
   }
   .footer {
-    padding: 57px;
+    padding: 44px;
   }
   .rightSide {
     > div {
@@ -110,5 +113,7 @@
   }
   .container{
     padding: 0;
+    padding-left: 36px;
+    padding-right: 36px;
   }
 }
