@@ -15,7 +15,7 @@
           <img src="/assets/img/vali_false.png" alt="">
         </div>
     }
-      <input #email="ngModel" [(ngModel)]="contactData.email" id="email" name="email"  type="email" placeholder="{{ 'contact.contact2' | translate }}" required [ngClass]="{'aktivInput': email.valid && email.touched}" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"/>
+      <input #email="ngModel" [(ngModel)]="contactData.email" id="email" name="email"  type="email" placeholder="{{ 'contact.contact2' | translate }}" required [ngClass]="{'aktivInput': email.valid && email.touched}" pattern="[^@]+@[^.]+..+"/>
       @if (!email.valid && email.touched) {
         <div class="validationText"><span style="color: white; margin-top: 3px;">{{ 'contact.contactR2' | translate }}</span>
            <img src="/assets/img/vali_false.png" alt="">
