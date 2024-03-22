@@ -24,8 +24,8 @@ export class MySkillsComponent {
     'API.svg',
     'github2.svg',
   ];
-  label = ['Angular', 'Typescript', 'Javascript', 'HTML', 'CSS'];
-  label2 = ['Firebase', 'Git', 'Scrum', 'Rest-API', 'Github'];
+  label = ['Angular', 'TypeScript', 'JavaScript', 'HTML', 'CSS'];
+  label2 = ['Firebase', 'git', 'Scrum', 'Rest-API', 'GitHub'];
 
   constructor() {}
 }
