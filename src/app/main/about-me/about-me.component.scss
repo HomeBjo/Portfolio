@@ -28,7 +28,7 @@
 }
 
 img {
-  height: 553px;
+  height: 438px;
   margin-top: 93px;
 }
 
@@ -55,6 +55,9 @@ img {
     height: 184px;
     margin-top: 0px;
   }
+}
+.imgContainer{
+  padding-left: 60px;
 }
 .button {
   > a {
@@ -86,6 +89,7 @@ img {
     font-size: 23px;
   }
   .imgContainer {
+    padding-left:0;
     > img {
       height: 438px;
     }
@@ -116,6 +120,7 @@ img {
     align-items: center;
   }
   .imgContainer {
+    padding-left:0;
     > img {
       height: 380px;
     }
@@ -128,7 +133,7 @@ img {
 }
 @media screen and (max-height: 1031px) {
   .containerAboutMe{
-    height:calc(100vh + 130px)
+    height:calc(100vh + 0px)
   }}
 @media screen and (max-width: 490px) {
   .containerAboutMe{
@@ -148,6 +153,7 @@ img {
     font-size: 19px;
   }
   .imgContainer {
+    padding-left:0;
     > img {
       height: 241px;
       margin-top: 21px;

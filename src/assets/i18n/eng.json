@@ -8,7 +8,7 @@
     },
     "aboutMe":{
         "title" : "About me",
-        "description" : " Hi, I'm Björn ten Eicken, a front-end developer from near Remscheid, Germany. I have always been interested in IT technology in the field of web and so I decided to specialize in Angular and Javascript. I have gained a lot of experience in the last year by creating many projects and I am sure I can help you with my experience in your company.",
+        "description" : " Hi, I'm Björn ten Eicken, a front-end developer from Remscheid, Germany. I have always been interested in web development.So I decided to specialize in JavaScript and Angular. I have gained a lot of experience last year by creating many projects and I am sure I can help you with my experience in your company.",
         "button" : "Let's talk"
         
     },
@@ -18,7 +18,7 @@
     ,
     "portfolio":{
         "title" : "Portfolio",
-        "title2" : "Explore selection of my work here - Interact with projects to see my skills in action",
+        "title2" : "Explore a selection of my work here - Interact with projects to see my skills in action",
         
         "descriptions": {
             "join": "Task Manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
@@ -29,7 +29,7 @@
     "contact":{
         "title" : "Say Hi!",
         "title2" : "Want discuss a new project?",
-        "title3" : "Say hello! let's discuss your ideas and make it happen",
+        "title3" : "Say hello! Let's discuss your ideas and make it happen",
         "contact" : "Your name",
         "contact2" : "Your email",
         "contact3" : "Your message",
