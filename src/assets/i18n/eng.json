@@ -8,7 +8,7 @@
     },
     "aboutMe":{
         "title" : "About me",
-        "description" : " Hi, I'm Björn ten Eicken, a front-end developer from Remscheid, Germany. I have always been interested in web development.So I decided to specialize in JavaScript and Angular. I have gained a lot of experience last year by creating many projects and I am sure I can help you with my experience in your company.",
+        "description" : " Hi, I'm Björn ten Eicken, a front-end developer from Remscheid, Germany. I have always been interested in web development. So I decided to specialize in JavaScript and Angular. I have gained a lot of experience last year by creating many projects and I am sure I can help you with my experience in your company.",
         "button" : "Let's talk"
         
     },
