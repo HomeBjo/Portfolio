@@ -8,7 +8,7 @@
     },
     "aboutMe":{
         "title" : "Über mich",
-        "description" : " Hallo, ich bin Björn ten Eicken, ein Frontend-Entwickler aus der Nähe von Remscheid, Deutschland. Ich habe mich schon immer für IT-Technologie im Bereich Web interessiert und habe mich daher für eine Spezialisierung auf Angular und Javascript entschieden. Ich habe im letzten Jahr durch die Erstellung vieler Projekte viel Erfahrung gesammelt und bin sicher, dass ich Ihnen mit meiner Erfahrung in Ihrem Unternehmen weiterhelfen kann.",
+        "description" : " Hallo, ich bin Björn ten Eicken, ein Frontend-Entwickler aus Remscheid, Deutschland. Ich habe mich schon immer für IT-Technologie im Bereich Web interessiert und habe mich daher für eine Spezialisierung auf Angular und Javascript entschieden. Ich habe im letzten Jahr durch die Erstellung vieler Projekte viel Erfahrung gesammelt und bin sicher, dass ich Ihnen mit meiner Erfahrung in Ihrem Unternehmen weiterhelfen kann.",
         "button" : "Lass uns reden"
     },
     "mySkills":{
