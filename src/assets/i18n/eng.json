@@ -21,6 +21,7 @@
         "title2" : "Explore a selection of my work here - Interact with projects to see my skills in action",
         
         "descriptions": {
+            "bubble":"Chat-app inspired by Slack. Keep in contact with your colleagues and organize the next steps in your company.",
             "join": "Task Manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
             "elpollo": "Play a little jump and run by helping little shark named Sharkie on his adventure."
         }
