@@ -23,7 +23,7 @@
   font-size: 32px;
   font-weight: 700;
   position: absolute;
-  right: 36px;
+  right: 0px;
 }
 
 @mixin boxStyles($leftValue) {
@@ -32,6 +32,7 @@
   opacity: 0;
   left: $leftValue;
   gap: 16px;
+  max-width: 900px;
   > div {
     display: flex;
     justify-content: flex-start;
@@ -97,7 +98,7 @@
   justify-content: flex-start;
   align-items: center;
   gap: 253px;
-  width: 76vw;
+  width: 80vw;
   max-width: 1920px;
   &:hover {
     .leftBox {
@@ -123,7 +124,7 @@
 
 .switchCount {
   position: absolute;
-  left: 36px;
+  left: 0px;
 }
 
 .leftBox {
@@ -257,6 +258,58 @@
     gap: 104px;
   }
 }
+@media screen and (max-width: 2280px) {
+  .leftBox {
+    max-width: 600px;
+  }
+}
+@media screen and (max-width: 1500px) {
+  .project {
+    gap: 50px;
+    flex-direction: column;
+  }
+  .leftBox {
+    display: flex;
+    flex-direction: column;
+     opacity: 0; 
+    left: 131px;
+    gap: 16px;
+    justify-content: center!important;
+    text-align: center;
+    animation: none !important;
+}
+.portfolioTitle{
+  font-size: 57px;
+  display: flex;
+  width: auto;
+  justify-content: center;
+}
+.infoBox{
+  display: flex;
+  justify-content: center!important;
+  gap: 22px;
+}
+.buttonBox{
+  justify-content: center!important;
+}
+.hoverContainerImg{
+  display: none;
+}
+.hoverContainerSwitch{
+  display: none;
+}
+.hoverContainer{
+  display: none;
+}
+.mainBox{
+  width: 100%;
+}
+.infoText{
+  max-width: 756px;
+}
+  
+
+}
 @media screen and (max-width: 1380px) {
   .header,
   .portfolioTitle {
@@ -277,6 +330,7 @@
     .imgs {
       margin: unset;
       margin-bottom: 8px;
+      width: 579px;
     }
   }
   .hoverContainer {
@@ -285,18 +339,7 @@
   .hoverContainerImg {
     display: none;
   }
-  .project {
-    gap: 0px;
-    flex-direction: column;
-    width: auto;
-    align-items: flex-start;
-  }
-  .switchBoxes {
-    align-items: flex-end !important;
-  }
-  .leftBox {
-    margin: 12px;
-  }
+
   .headerdescription {
     width: 82vw;
     text-align: center;
@@ -313,7 +356,7 @@
   }
   .mainBox {
     .imgs {
-      height: 335px;
+      height: 265px;
       width: auto;
     }
   }
@@ -332,7 +375,6 @@
 
 @media screen and (max-width: 550px) {
   .switchBoxes {
-    align-items: flex-end !important;
     opacity: 1;
   }
 
@@ -367,11 +409,18 @@
       }
     }
   }
+  .infoBox {
+    justify-content: center;
+  }
   .switchBoxes {
     align-items: center !important;
   }
   .leftBox {
-    width: 201px;
+    width: 250px;
+    text-align: center;
+    > div {
+      justify-content: center;
+    }
   }
   .mainBox {
     .imgs {

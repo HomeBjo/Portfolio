@@ -16,7 +16,7 @@
 .headerContainer {
   display: flex;
   justify-content: center;
-  margin-bottom: -104px;
+  margin-bottom: -39px;
   > div {
     display: flex;
     background: rgb(255, 252, 243);
@@ -45,14 +45,13 @@
   flex-wrap: wrap;
   flex-direction: column;
   gap: 145px;
-  margin: 69px;
   text-align: center;
-  > div {
+  >div {
     display: flex;
     gap: 10vw;
     flex-wrap: wrap;
     justify-content: center;
-    > div {
+    >div {
       display: flex;
       flex-direction: column;
       color: black;
@@ -80,7 +79,7 @@
   }
   .skillContainer {
     gap: 0;
-    > div {
+    >div {
       gap: 9vw;
       margin: 21px;
       margin-top: 73px;
@@ -90,7 +89,7 @@
 @media screen and (max-width: 1170px) {
   .headerContainer {
     font-size: 46px;
-    margin-bottom: -92px;
+    margin-bottom: -25px;
   }
 }
 
@@ -108,14 +107,14 @@
     min-height: 0px;
     align-items: center;
     
-    > div {
+    >div {
       gap: 10vw;
 
-      > div {
+      >div {
         font-size: 20px;
         display: flex;
         align-items: center;
-        > img {
+        >img {
           height: 45px;
           width: 45px;
         }
@@ -139,7 +138,7 @@
 }
 @media screen and (max-width: 430px) {
   .skillContainer {
-    > div {
+    >div {
       gap: 7vw;
       margin: 1px;
       margin-top: 12px;
@@ -153,22 +152,18 @@
 @media screen and (min-width: 1921px) {
   .skillContainer {
     margin: 0px;
-  }
-    > div {
+  
+    >div {
       gap: 200px;
 
-      > div {
+      >div {
         font-size: 20px;
-        > img {
+        >img {
           height: 120px;
         }
       }
-    }
+    }}
   }
-  .headerContainer {
-    margin-bottom: -39px;
-  }
-
 // @media screen and (max-height: 900px) {
 //   .containerMySkill{
 //     height: calc(100vh + 205px);

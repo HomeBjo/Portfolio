@@ -43,13 +43,13 @@ div {
 .sektionBottom {
   bottom: 48px;
   position: absolute;
-  width: 100%;
+  width: 80vw;
   flex-direction: unset;
   justify-content: space-between;
   align-items: normal;
   max-width: 1920px;
   > a {
-    margin-left: -5rem;
+    margin-left: -10rem;
     text-decoration: none;
     font-family: "Overpass";
     font-size: 25px;
@@ -60,7 +60,7 @@ div {
   }
 }
 #scrollContainer {
-  margin-right: 4rem;
+  
   display: flex;
   rotate: none;
   justify-content: center;
@@ -128,7 +128,7 @@ div {
     font-size: 34px !important;
   }
   #scrollContainer {
-    margin-right: 2rem;
+    
     align-items: center;
     > span {
       margin-bottom: -52px;
@@ -144,7 +144,7 @@ div {
   }
   .sektionBottom {
     > a {
-      margin-left: -6rem;
+      margin-left: -9rem;
       font-size: 22px;
     }
   }
@@ -167,7 +167,7 @@ div {
     font-size: 18px !important;
   }
   #scrollContainer {
-    margin-right: 2rem;
+    
     align-items: center;
     > span {
       margin-bottom: -61px;
@@ -184,7 +184,7 @@ div {
   }
   .sektionBottom {
     > a {
-      margin-left: -5rem;
+      margin-left: -7rem;
       font-size: 18px;
       margin-top: 23px;
     }

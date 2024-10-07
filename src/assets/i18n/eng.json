@@ -20,10 +20,11 @@
         "title" : "Portfolio",
         "title2" : "Explore a selection of my work here - Interact with projects to see my skills in action",
         
-        "descriptions": {
+       "descriptions": {
+            "videoflix":"A video platform for watching videos in different quality levels. Enjoy a user-friendly interface for an optimal video experience, whether you want to discover new content or watch your favorite videos.",
             "bubble":"Chat-app inspired by Slack. Keep in contact with your colleagues and organize the next steps in your company.",
             "join": "Task Manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
-            "elpollo": "Play a little jump and run by helping little shark named Sharkie on his adventure."
+            "elpollo": "Play a little jump and run by helping Pepe on his adventure."
         }
     }
     ,

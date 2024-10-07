@@ -20,9 +20,10 @@
         "title2" : "Entdecken Sie hier eine Auswahl meiner Arbeiten. Interagieren Sie mit Projekten, um meine Fähigkeiten in Aktion zu sehen",
         
         "descriptions": {
+            "videoflix":"Eine Videoplattform zum Ansehen von Videos in verschiedenen Qualitätsstufen. Genieße eine benutzerfreundliche Oberfläche für ein optimales Videoerlebnis, egal ob du neue Inhalte entdecken oder deine Lieblingsvideos anschauen möchtest.",
             "bubble":"Von Slack inspirierte Chat-App. Bleiben Sie mit Ihren Kollegen in Kontakt und organisieren Sie die nächsten Schritte in Ihrem Unternehmen.",
             "join": "Task-Manager, inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mithilfe von Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.",
-            "elpollo": "Spielen Sie ein kleines Jump and Run, indem Sie dem kleinen Hai namens Sharkie bei seinem Abenteuer helfen."
+            "elpollo": "Spielen Sie ein kleines Jump and Run, indem Sie Pepe bei seinem Abenteuer helfen."
         }
     }
     ,
