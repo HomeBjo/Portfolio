@@ -15,6 +15,9 @@ export class MySkillsComponent {
     'javascript.svg',
     'html.svg',
     'css.svg',
+    'django.svg',
+    'postman.svg',
+    'python.png',
   ];
 
   iconPath2 = [
@@ -23,9 +26,12 @@ export class MySkillsComponent {
     'scrum.svg',
     'API.svg',
     'github2.svg',
+    'linux.png',
+    'postgres.png',
+    
   ];
-  label = ['Angular', 'TypeScript', 'JavaScript', 'HTML', 'CSS'];
-  label2 = ['Firebase', 'git', 'Scrum', 'Rest-API', 'GitHub'];
+  label = ['Angular', 'TypeScript', 'JavaScript', 'HTML', 'CSS','Django','Postman','Python'];
+  label2 = ['Firebase', 'git', 'Scrum', 'Rest-API', 'GitHub','Linux','PostgresSQL'];
 
   constructor() {}
 }

@@ -1,6 +1,6 @@
 {
     "landingPage":{
-        "title" : "Frontend",
+        "title" : "Full-Stack",
         "title2" : "Entwickler",
         "arrow" : "Scroll",
         "arrow2" : "Down"
@@ -8,7 +8,7 @@
     },
     "aboutMe":{
         "title" : "Über mich",
-        "description" : " Hallo, ich bin Björn ten Eicken, ein Frontend-Entwickler aus Remscheid, Deutschland. Ich habe mich schon immer für IT-Technologie im Bereich Web interessiert und habe mich daher für eine Spezialisierung auf Angular und Javascript entschieden. Ich habe im letzten Jahr durch die Erstellung vieler Projekte viel Erfahrung gesammelt und bin sicher, dass ich Ihnen mit meiner Erfahrung in Ihrem Unternehmen weiterhelfen kann.",
+        "description" : "Hallo, ich bin Björn ten Eicken, ein Fullstack-Entwickler aus Remscheid, Deutschland. Mit meinem Fokus auf Angular und JavaScript im Frontend sowie Python und Django Rest API im Backend decke ich das gesamte Spektrum der Webentwicklung ab. Ich biete umfangreiche Erfahrung in der Entwicklung moderner, effizienter Webanwendungen und bin bereit, mein Know-how in einem zukunftsorientierten Unternehmen einzubringen. Lassen Sie uns gemeinsam großartige Projekte umsetzen!",
         "button" : "Lass uns reden"
     },
     "mySkills":{
@@ -20,10 +20,10 @@
         "title2" : "Entdecken Sie hier eine Auswahl meiner Arbeiten. Interagieren Sie mit Projekten, um meine Fähigkeiten in Aktion zu sehen",
         
         "descriptions": {
-            "videoflix":"Eine Videoplattform zum Ansehen von Videos in verschiedenen Qualitätsstufen. Genieße eine benutzerfreundliche Oberfläche für ein optimales Videoerlebnis, egal ob du neue Inhalte entdecken oder deine Lieblingsvideos anschauen möchtest.",
+            "videoflix":"Eine vielseitige Videoplattform, die es dir ermöglicht, Inhalte in verschiedenen Qualitätsstufen anzusehen. Ob du neue Videos entdeckst oder deine Lieblingsvideos genießt – alles in einer benutzerfreundlichen Umgebung.",
             "bubble":"Von Slack inspirierte Chat-App. Bleiben Sie mit Ihren Kollegen in Kontakt und organisieren Sie die nächsten Schritte in Ihrem Unternehmen.",
             "join": "Task-Manager, inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mithilfe von Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.",
-            "elpollo": "Spielen Sie ein kleines Jump and Run, indem Sie Pepe bei seinem Abenteuer helfen."
+            "elpollo": "Spielen Sie ein kleines Jump-and-Run-Spiel, indem Sie Pepe bei seinem aufregenden Abenteuer durch die gefährliche Wüste begleiten. Helfen Sie ihm, fiesen Gegnern zu entkommen. Trauen Sie sich, das Abenteuer zu bestehen und die Herausforderung zu meistern?"
         }
     }
     ,

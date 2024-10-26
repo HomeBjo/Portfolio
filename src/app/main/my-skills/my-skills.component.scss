@@ -48,7 +48,7 @@
   text-align: center;
   >div {
     display: flex;
-    gap: 10vw;
+    gap: 5vw;
     flex-wrap: wrap;
     justify-content: center;
     >div {
@@ -57,8 +57,9 @@
       color: black;
       font-family: "Overpass";
       font-size: 16px;
+      gap: 3px;
       > img {
-        height: 67px;
+        height: 78px;
         filter: brightness(0);
 
         &:hover {
@@ -154,7 +155,7 @@
     margin: 0px;
   
     >div {
-      gap: 200px;
+      gap: 80px;
 
       >div {
         font-size: 20px;

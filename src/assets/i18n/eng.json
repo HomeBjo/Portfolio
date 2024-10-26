@@ -1,6 +1,6 @@
 {
     "landingPage":{
-        "title" : "Frontend",
+        "title" : "Full-Stack",
         "title2" : "Developer",
         "arrow" : "Scroll",
         "arrow2" : "Down"
@@ -8,7 +8,7 @@
     },
     "aboutMe":{
         "title" : "About me",
-        "description" : " Hi, I'm Björn ten Eicken, a front-end developer from Remscheid, Germany. I have always been interested in web development. So I decided to specialize in JavaScript and Angular. I have gained a lot of experience last year by creating many projects and I am sure I can help you with my experience in your company.",
+        "description" : " Hi, I'm Björn ten Eicken, a fullstack developer from Remscheid, Germany. With a focus on Angular and JavaScript on the frontend, and Python and Django Rest API on the backend, I cover the full spectrum of web development. I bring extensive experience in building modern and efficient web applications and am ready to contribute my expertise to a forward-thinking company. Let’s create great projects together!",
         "button" : "Let's talk"
         
     },
@@ -21,10 +21,10 @@
         "title2" : "Explore a selection of my work here - Interact with projects to see my skills in action",
         
        "descriptions": {
-            "videoflix":"A video platform for watching videos in different quality levels. Enjoy a user-friendly interface for an optimal video experience, whether you want to discover new content or watch your favorite videos.",
+            "videoflix":"A versatile video platform that allows you to watch content in various quality levels. Whether you're discovering new videos or enjoying your favorite ones – all within a user-friendly environment.",
             "bubble":"Chat-app inspired by Slack. Keep in contact with your colleagues and organize the next steps in your company.",
             "join": "Task Manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
-            "elpollo": "Play a little jump and run by helping Pepe on his adventure."
+            "elpollo": "Play a small jump-and-run game by joining Pepe on his thrilling adventure through the dangerous desert. Help him escape from nasty enemies. Do you dare to take on the challenge and complete the adventure?"
         }
     }
     ,
