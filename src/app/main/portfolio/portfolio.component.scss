@@ -42,7 +42,7 @@
     }
   }
 }
-.content{
+.content {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -140,7 +140,7 @@
     display: flex;
     position: absolute;
     // top: -196px;
-    
+
     left: 150px;
     transform: rotate(135deg);
     opacity: 0;
@@ -150,7 +150,6 @@
   font-size: 48px;
   font-family: "Syne";
   font-weight: 800;
-  width: 300px;
 }
 .infoBox {
   font-family: "Overpass";
@@ -262,6 +261,9 @@
   .leftBox {
     max-width: 450px;
   }
+  .portfolioTitle {
+    width: 485px;
+  }
 }
 @media screen and (max-width: 1500px) {
   .project {
@@ -271,44 +273,42 @@
   .leftBox {
     display: flex;
     flex-direction: column;
-     opacity: 0; 
+    opacity: 0;
     left: 131px;
     gap: 16px;
-    justify-content: center!important;
+    justify-content: center !important;
     text-align: center;
     animation: none !important;
-}
-.portfolioTitle{
-  font-size: 57px;
-  display: flex;
-  width: auto;
-  justify-content: center;
-}
-.infoBox{
-  display: flex;
-  justify-content: center!important;
-  gap: 22px;
-}
-.buttonBox{
-  justify-content: center!important;
-}
-.hoverContainerImg{
-  display: none;
-}
-.hoverContainerSwitch{
-  display: none;
-}
-.hoverContainer{
-  display: none;
-}
-.mainBox{
-  width: 100%;
-}
-.infoText{
-  max-width: 756px;
-}
-  
-
+  }
+  .portfolioTitle {
+    font-size: 57px;
+    display: flex;
+    width: auto;
+    justify-content: center;
+  }
+  .infoBox {
+    display: flex;
+    justify-content: center !important;
+    gap: 22px;
+  }
+  .buttonBox {
+    justify-content: center !important;
+  }
+  .hoverContainerImg {
+    display: none;
+  }
+  .hoverContainerSwitch {
+    display: none;
+  }
+  .hoverContainer {
+    display: none;
+  }
+  .mainBox {
+    width: 100%;
+  }
+  .infoText {
+    max-width: 756px;
+  }
 }
 @media screen and (max-width: 1380px) {
   .header,

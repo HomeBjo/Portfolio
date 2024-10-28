@@ -20,7 +20,7 @@ export class PortfolioComponent {
   ];
 
   title = ['Videoflix','DABubble','Join', 'El Pollo Loco'];
-  usedTech = ['Django REST | Python | Angular | TypeScript','TypeScript | Html | SCSS','JavaScript | Html | CSS', 'JavaScript | Html | CSS'];
+  usedTech = ['Django | Python | Angular | TypeScript','TypeScript | Html | SCSS','JavaScript | Html | CSS', 'JavaScript | Html | CSS'];
   links = ['https://videoflix.xn--bjrnteneicken-jmb.de/',
     'https://dabubble.xn--bjrnteneicken-jmb.de/index.html',
     'https://xn--bjrnteneicken-jmb.de/join/html/login.html',

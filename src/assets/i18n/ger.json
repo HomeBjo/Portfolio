@@ -20,7 +20,7 @@
         "title2" : "Entdecken Sie hier eine Auswahl meiner Arbeiten. Interagieren Sie mit Projekten, um meine Fähigkeiten in Aktion zu sehen",
         
         "descriptions": {
-            "videoflix":"Eine vielseitige Videoplattform, die es dir ermöglicht, Inhalte in verschiedenen Qualitätsstufen anzusehen. Ob du neue Videos entdeckst oder deine Lieblingsvideos genießt – alles in einer benutzerfreundlichen Umgebung.",
+            "videoflix":"Eine vielseitige Videoplattform mit einer REST-API, die es dir ermöglicht, Inhalte in verschiedenen Qualitätsstufen anzusehen. Entdecke neue Videos oder genieße deine Lieblingsinhalte – alles in einer benutzerfreundlichen Umgebung.",
             "bubble":"Von Slack inspirierte Chat-App. Bleiben Sie mit Ihren Kollegen in Kontakt und organisieren Sie die nächsten Schritte in Ihrem Unternehmen.",
             "join": "Task-Manager, inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mithilfe von Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.",
             "elpollo": "Spielen Sie ein kleines Jump-and-Run-Spiel, indem Sie Pepe bei seinem aufregenden Abenteuer durch die gefährliche Wüste begleiten. Helfen Sie ihm, fiesen Gegnern zu entkommen. Trauen Sie sich, das Abenteuer zu bestehen und die Herausforderung zu meistern?"

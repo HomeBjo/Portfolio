@@ -21,7 +21,7 @@
         "title2" : "Explore a selection of my work here - Interact with projects to see my skills in action",
         
        "descriptions": {
-            "videoflix":"A versatile video platform that allows you to watch content in various quality levels. Whether you're discovering new videos or enjoying your favorite ones – all within a user-friendly environment.",
+            "videoflix":"A versatile video platform with a REST API that allows you to watch content in various quality levels. Discover new videos or enjoy your favorite content – all within a user-friendly environment.",
             "bubble":"Chat-app inspired by Slack. Keep in contact with your colleagues and organize the next steps in your company.",
             "join": "Task Manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
             "elpollo": "Play a small jump-and-run game by joining Pepe on his thrilling adventure through the dangerous desert. Help him escape from nasty enemies. Do you dare to take on the challenge and complete the adventure?"
