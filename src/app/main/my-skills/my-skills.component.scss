@@ -58,8 +58,10 @@
       font-family: "Overpass";
       font-size: 16px;
       gap: 3px;
+      align-items: center;
       > img {
         height: 78px;
+        width: 78px;
         filter: brightness(0);
 
         &:hover {
@@ -161,6 +163,7 @@
         font-size: 20px;
         >img {
           height: 120px;
+          width: 120px;
         }
       }
     }}
