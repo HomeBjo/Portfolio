@@ -20,15 +20,15 @@ export class PortfolioComponent {
   ];
 
   title = ['Videoflix','DABubble','Join', 'El Pollo Loco'];
-  usedTech = ['Django | Python | Angular | TypeScript','TypeScript | Html | SCSS','JavaScript | Html | CSS', 'JavaScript | Html | CSS'];
+  usedTech = ['Django | Python | Angular | TypeScript','TypeScript | HTML | SCSS','TypeScript | HTML | SCSS', 'JavaScript | HTML | CSS'];
   links = ['https://videoflix.xn--bjrnteneicken-jmb.de/',
     'https://dabubble.xn--bjrnteneicken-jmb.de/index.html',
-    'https://xn--bjrnteneicken-jmb.de/join/html/login.html',
+    'https://join.xn--bjrnteneicken-jmb.de/login',
     'https://xn--bjrnteneicken-jmb.de/el_pollo_loco/index.html',
   ];
   gitLinks = ['https://github.com/HomeBjo/Videoflix',
     'https://github.com/HomeBjo/DABubble.git',
-    'https://github.com/HomeBjo/JOIN',
+    'https://github.com/HomeBjo/Join-Firebase',
     'https://github.com/HomeBjo/el_pollo_loco',
   ];
   projectKeys = ['videoflix','bubble','join', 'elpollo'];
