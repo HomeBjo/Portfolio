@@ -35,8 +35,14 @@
             </div>
             <span class="infoText">{{ 'portfolio.descriptions.' + projectKeys[i] | translate }}</span>
             <div class="buttonBox">
-              <a href="{{ links[i] }}" target="_blank">Live</a>
+              <a href="{{ links[i] }}" target="_blank">
+                {{ i === 2 ? 'Angular' : 'Live' }}
+              </a>
               <a href="{{ gitLinks[i] }}" target="_blank">GitHub</a>
+            </div>
+            <div *ngIf="i === 2" class="buttonBox">
+              <a href="{{ 'https://xn--bjrnteneicken-jmb.de/join/html/login.html' }}" target="_blank">JavaScript</a>
+              <a href="{{'https://github.com/HomeBjo/JOIN'}}" target="_blank">GitHub</a>
             </div>
           </div>
         </div>
