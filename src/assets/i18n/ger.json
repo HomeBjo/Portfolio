@@ -20,10 +20,10 @@
         "title2" : "Entdecken Sie hier eine Auswahl meiner Arbeiten. Interagieren Sie mit Projekten, um meine Fähigkeiten in Aktion zu sehen",
         
         "descriptions": {
-            "videoflix":"Eine vielseitige Videoplattform mit einer REST-API, die es dir ermöglicht, Inhalte in verschiedenen Qualitätsstufen anzusehen. Entdecke neue Videos oder genieße deine Lieblingsinhalte – alles in einer benutzerfreundlichen Umgebung.",
-            "bubble":"Von Slack inspirierte Chat-App. Bleiben Sie mit Ihren Kollegen in Kontakt und organisieren Sie die nächsten Schritte in Ihrem Unternehmen.",
-            "join": "Task-Manager, inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mithilfe von Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.",
-            "elpollo": "Spielen Sie ein kleines Jump-and-Run-Spiel, indem Sie Pepe bei seinem aufregenden Abenteuer durch die gefährliche Wüste begleiten. Helfen Sie ihm, fiesen Gegnern zu entkommen. Trauen Sie sich, das Abenteuer zu bestehen und die Herausforderung zu meistern?"
+            "videoflix":"Eine moderne Videoplattform mit Angular-Frontend und Django-Backend, inklusive REST-API, Benutzer-Authentifizierung und Admin-Interface. Videos werden automatisch verarbeitet, konvertiert und in einem Cloud-Storage mit PostgreSQL und Redis effizient verwaltet.",
+            "bubble":"Echtzeit-Chat-App mit Angular-Frontend und Firebase-Backend. Unterstützt Google-Login, Channel- und Direktnachrichten sowie Bild-Uploads über Firebase Storage. Nachrichten werden über Firestore synchronisiert, mit Funktionalität und Design angelehnt an Slack.",
+            "join": "Task-Manager im Stil eines Kanban-Boards mit Drag-and-Drop, Benutzer- und Kategoriezuteilung. Umgesetzt in Vanilla JavaScript und als moderne Single-Page-Anwendung mit Angular, zum Vergleich klassischer und komponentenbasierter Webarchitektur.",
+            "elpollo": "Entwickelt mit objektorientierter JavaScript-Programmierung mit klarer Struktur und wiederverwendbarer Spiellogik. Spielen Sie ein kleines Jump-and-Run-Spiel und begleiten Sie Pepe bei seinem Abenteuer durch die gefährliche Wüste. Helfen Sie ihm, fiesen Gegnern zu entkommen."
         }
     }
     ,

@@ -21,10 +21,10 @@
         "title2" : "Explore a selection of my work here - Interact with projects to see my skills in action",
         
        "descriptions": {
-            "videoflix":"A versatile video platform with a REST API that allows you to watch content in various quality levels. Discover new videos or enjoy your favorite content – all within a user-friendly environment.",
-            "bubble":"Chat-app inspired by Slack. Keep in contact with your colleagues and organize the next steps in your company.",
-            "join": "Task Manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
-            "elpollo": "Play a small jump-and-run game by joining Pepe on his thrilling adventure through the dangerous desert. Help him escape from nasty enemies. Do you dare to take on the challenge and complete the adventure?"
+            "videoflix":"A modern video platform with an Angular frontend and Django backend, featuring a REST API, user authentication, and admin interface. Videos are automatically processed, converted, and efficiently managed using cloud storage, PostgreSQL, and Redis.",
+            "bubble":"Real-time chat app with Angular frontend and Firebase backend. Supports Google login, channels, private messaging, and image uploads via Firebase Storage. Messages sync through Firestore, with functionality and design inspired by Slack.",
+            "join": "Task manager in Kanban style with drag and drop, user and category assignment. Implemented in Vanilla JavaScript and as a modern single-page application using Angular, to contrast traditional and component-based web architecture.",
+            "elpollo": "Developed using object-oriented JavaScript with a clear structure and reusable game logic. Play a small jump-and-run game and join Pepe on his adventure through the dangerous desert. Help him escape from nasty enemies."
         }
     }
     ,
